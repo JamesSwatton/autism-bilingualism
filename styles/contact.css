@@ -1,0 +1,35 @@
+[type=text],
+[type=email],
+select {
+  display: block;
+  width: 100%;
+}
+
+[type=radio] {
+  margin: 6px 0;
+}
+
+form {
+  padding: var(--margin);
+  display: grid;
+  gap: 1rem;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+.scale-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.scale {
+  display: flex;
+  flex-direction: column;
+}
+
+.emoji {
+  font-size: 1.3rem;
+}
