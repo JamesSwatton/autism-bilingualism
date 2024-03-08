@@ -23,6 +23,7 @@
   --color-gray-lighter: #f7f7f7;
   /* Fonts */
   --font-primary: "Helvetica Neue", Arial, sans-serif;
+  --font-secondary: Georgia, serif;
   --font-monospace: Menlo, Monaco, "Courier New", monospace;
   /* Sizes */
   --font-size: 100%;
@@ -49,6 +50,9 @@
   height: clamp(500px, 100vh, 100vh);
 }
 
+/* @section Group classes */
+
+/* Media */
 @media (min-width: 820px) {
   @supports (display: grid) {
     .media {
@@ -82,16 +86,18 @@
   grid-column: 1/2;
 }
 
+/* Bio */
 .bio {
   display: grid;
   grid-template-columns: minmax(100px, max-conent) 1fr;
-  grid-template-rows: repeat(4, max-content);
+  grid-template-rows: repeat(2, max-content) 1fr;
   gap: 1rem;
   margin: 2rem 0;
 }
 
 .bio__name {
-  grid-column: 1/3;
+  grid-column: 2;
+  grid-row: 1;
   border-top: 1px solid var(--color-gray-medium);
   border-bottom: 1px solid var(--color-gray-medium);
   margin: 0;
@@ -99,14 +105,32 @@
 }
 
 .bio__img {
-  grid-column: 1/2;
-  grid-row: 2/span 2;
+  grid-column: 1;
+  grid-row: 1/span 2;
+  width: 200px;
   min-width: 150px;
 }
 
+.bio__list {
+  grid-column: 1;
+  grid-row: 3;
+  font-size: 90%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-secondary);
+  font-style: italic;
+}
+
+.bio__list li::after {
+  content: ' /';
+}
+
 .bio__text {
-  grid-column: 2/3;
-  grid-row: 3/span 2;
+  margin-top: 3.5rem;
+  grid-column: 2;
+  grid-row: 2/span 2;
+  max-width: 75ch;
 }
 
 /* @section Typography
