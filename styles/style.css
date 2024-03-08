@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: 'Merriweather Regular';
+  src: url(../assets/fonts/Merriweather/Merriweather-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Merriweather Bold';
+  src: url(../assets/fonts/Merriweather/Merriweather-Bold.ttf);
+}
+
 @import "reset.css";
 @import "contact.css";
 
@@ -23,19 +33,13 @@
   --color-gray-lighter: #f7f7f7;
   /* Fonts */
   --font-primary: "Helvetica Neue", Arial, sans-serif;
-  --font-secondary: Georgia, serif;
+  --font-secondary: "Merriweather Bold", Georgia, serif;
   --font-monospace: Menlo, Monaco, "Courier New", monospace;
   /* Sizes */
   --font-size: 100%;
   --spacing: 1.5625em;
   --container-width: 88%;
   --container-max-width: 70em;
-}
-
-@media (orientation: landscape) {
-  body {
-    background-color: blue;
-  }
 }
 
 .container {
@@ -53,20 +57,23 @@
 /* @section Group classes */
 
 /* Media */
-@media (min-width: 820px) {
-  @supports (display: grid) {
-    .media {
-      display: grid;
-      margin: 2rem auto;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.4rem;
-      margin-bottom: 5rem;
-    }
-  }
+.media {
+  display: grid;
+  margin: 2rem auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: max-content 1fr;
+  gap: 1.4rem;
+  margin-bottom: 5rem;
+}
+
+.media__heading {
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .media__text {
-  grid-row: 2/3;
+  grid-column: 1;
+  grid-row: 2;
   margin: 0 auto;
 }
 
@@ -75,6 +82,7 @@
 }
 
 .media__img {
+  grid-area: 1 / 2 / 3 / 3;
   align-self: end;
   display: block;
   width: 100%;
@@ -86,13 +94,38 @@
   grid-column: 1/2;
 }
 
+@media (max-width: 820px) {
+  .media {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+  }
+
+  .media__heading {
+    border-bottom: 1px solid var(--color-gray-medium);
+    padding-bottom: 1rem;
+  }
+
+  .media__text {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .media__img {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: 400px;
+  }
+}
+
 /* Bio */
+
+
 .bio {
   display: grid;
-  grid-template-columns: minmax(100px, max-conent) 1fr;
+  grid-template-columns: minmax(140px, auto) auto;
   grid-template-rows: repeat(2, max-content) 1fr;
   gap: 1rem;
-  margin: 2rem 0;
+  margin: 5rem 0;
 }
 
 .bio__name {
@@ -102,13 +135,14 @@
   border-bottom: 1px solid var(--color-gray-medium);
   margin: 0;
   padding: 1rem 0;
+  font-family: Merriweather;
+  white-space: nowrap;
 }
 
 .bio__img {
   grid-column: 1;
   grid-row: 1/span 2;
-  width: 200px;
-  min-width: 150px;
+  width: clamp(140px, 100%, 200px);
 }
 
 .bio__list {
@@ -118,19 +152,32 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  font-family: var(--font-secondary);
+  font-family: Georgia, serif;
   font-style: italic;
 }
 
 .bio__list li::after {
-  content: ' /';
+  content: '/';
 }
 
 .bio__text {
   margin-top: 3.5rem;
   grid-column: 2;
   grid-row: 2/span 2;
-  max-width: 75ch;
+  max-width: clamp(45ch, 100%, 75ch);
+}
+
+@media (max-width: 600px) {
+  .bio__list {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .bio__text {
+    grid-column: 1/span 2;
+    grid-row: 3;
+    margin-top: 1rem;
+  }
 }
 
 /* @section Typography
@@ -146,6 +193,7 @@ body {
 h1,
 h2,
 h3 {
+  font-family: "Merriweather Bold";
   margin: 0.5rem 0 1.5rem 0;
   line-height: 1;
 }
