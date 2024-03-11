@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import "reset.css";
 
 @font-face {
   font-family: 'Merriweather Regular';
@@ -10,8 +10,6 @@
   src: url(../assets/fonts/Merriweather/Merriweather-Bold.ttf);
 }
 
-@import "reset.css";
-@import "contact.css";
 
 /**
  * Configs
@@ -40,6 +38,9 @@
   --spacing: 1.5625em;
   --container-width: 88%;
   --container-max-width: 70em;
+  /* Margins, spacings, borders */
+  --margin: 5rem;
+  --border-radius: 6px;
 }
 
 .container {
@@ -63,7 +64,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: max-content 1fr;
   gap: 1.4rem;
-  margin-bottom: 5rem;
+  margin-bottom: var(--margin);
 }
 
 .media__heading {
@@ -126,14 +127,16 @@
 }
 
 /* Bio */
-
+.bios {
+  margin: var(--margin) 0;
+}
 
 .bio {
   display: grid;
   grid-template-columns: minmax(140px, auto) auto;
   grid-template-rows: repeat(2, max-content) 1fr;
   gap: 1rem;
-  margin: 5rem 0;
+  margin: 3rem 0;
 }
 
 .bio__name {
@@ -151,6 +154,7 @@
   grid-column: 1;
   grid-row: 1/span 2;
   width: clamp(140px, 100%, 200px);
+  border-radius: var(--border-radius)
 }
 
 .bio__list {
@@ -216,4 +220,62 @@ p {
 
 a {
   margin-bottom: 2rem;
+}
+
+/* @Page Contact */
+/* @Section Form */
+[type=text] {
+  display: block;
+  width: 100%;
+}
+
+[type=radio] {
+  margin: 6px 0;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+.form-wrapper {
+  width: clamp(100px, 100%, 600px);
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: var(--border-radius);
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
+
+  & h2 {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.field {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
+.field input {
+  flex-grow: 1;
+}
+
+.scale-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.scale {
+  display: flex;
+  flex-direction: column;
+}
+
+.emoji {
+  font-size: 1.3rem;
 }
