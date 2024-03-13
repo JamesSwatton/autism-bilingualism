@@ -17,6 +17,10 @@ summary {
 	touch-action: manipulation;
 }
 
+button {
+	all: unset;
+}
+
 /**
  * Add box sizing to everything
  * @link http://www.paulirish.com/2012/box-sizing-border-box-ftw/

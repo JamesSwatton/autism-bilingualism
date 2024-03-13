@@ -10,13 +10,19 @@
   src: url(../assets/fonts/Merriweather/Merriweather-Bold.ttf);
 }
 
+@font-face {
+  font-family: 'Merriweather Light';
+  src: url(../assets/fonts/Merriweather/Merriweather-Light.ttf)
+}
 
 /**
  * Configs
  */
 :root {
   /* Colors */
-  --color-primary: #0088cc;
+  /*--color-primary: #2628e5;*/
+  --color-primary: #3f4dff;
+  --color-primary-light: #f0f6ff;
   --color-primary-dark: #005580;
   --color-secondary: #377f31;
   --color-secondary-dark: #2C6327;
@@ -24,6 +30,7 @@
   --color-highlight: #fbf9c9;
   --color-black: #272727;
   --color-white: #f9f9f9;
+  /*--color-white: #ffffff;*/
   --color-gray-dark: #808080;
   --color-gray-darker: #555555;
   --color-gray-medium: #B8B8B8;
@@ -32,15 +39,42 @@
   /* Fonts */
   --font-primary: "Helvetica Neue", Arial, sans-serif;
   --font-secondary: "Merriweather Bold", Georgia, serif;
+  --font-secondary--light: "Merriweather Light", Georgia, serif;
   --font-monospace: Menlo, Monaco, "Courier New", monospace;
   /* Sizes */
   --font-size: 100%;
   --spacing: 1.5625em;
   --container-width: 88%;
   --container-max-width: 70em;
+  --text-width: clamp(45ch, 100%, 75ch);
   /* Margins, spacings, borders */
-  --margin: 5rem;
+  --margin: 4.5rem;
   --border-radius: 6px;
+  /* Breakpoints */
+  /* Can't be used in media queries so just for reference */
+  /* Extra small devices (phones, 600px and down)
+     @media only screen and (max-width: 600px) {...}
+     
+     Small devices (portrait tablets and large phones, 600px and up)
+     @media only screen and (min-width: 600px) {...}
+     
+     Medium devices (landscape tablets, 768px and up)
+     @media only screen and (min-width: 768px) {...}
+     
+     Large devices (laptops/desktops, 992px and up)
+     @media only screen and (min-width: 992px) {...}
+     
+     Extra large devices (large laptops and desktops, 1200px and up)
+     @media only screen and (min-width: 1200px) {...}
+  */
+  /* Shadows */
+  --btn-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* @section Group classes */
+
+.text-primary {
+  color: var(--color-primary)
 }
 
 .container {
@@ -55,7 +89,136 @@
   height: clamp(500px, 100vh, 100vh);
 }
 
-/* @section Group classes */
+.container--border {
+  border-bottom: 1px solid var(--color-gray-dark);
+}
+
+/* FAQ */
+
+.faq>h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.question-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  border-bottom: 1px solid var(--color-gray-dark);
+  padding: 1rem;
+  column-gap: 1rem;
+}
+
+.question-wrapper div.status {
+  width: 1rem;
+  height: 1rem;
+  background: transparent;
+  border: 2px solid var(--color-primary);
+  border-radius: 100%;
+  margin-top: 0.5rem;
+  transition: background 250ms ease;
+}
+
+.question-wrapper.opened div.status {
+  background: var(--color-primary);
+}
+
+.question-wrapper.opened .info {
+  display: block;
+}
+
+.info-wrapper p:first-child {
+  cursor: pointer;
+}
+
+.info-wrapper .info {
+  margin: 8px 0;
+  display: none;
+}
+
+/* Article */
+.article {
+  display: grid;
+  grid-template-columns: minmax(100px, 360px) auto;
+  column-gap: 4rem;
+  row-gap: 1.4rem;
+}
+
+.article__heading {
+  grid-column: 2;
+}
+
+.article__text {
+  grid-column: 2;
+  grid-row: 2/4;
+}
+
+.article__img {
+  grid-row: 2;
+}
+
+.article__aside {
+  grid-row: 3;
+}
+
+.article__aside ul {
+  width: 88%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  & li {
+    font-family: var(--font-primary);
+    margin-bottom: 1.4rem;
+    color: var(--color-primary);
+    text-transform: uppercase;
+  }
+}
+
+.bilingual-questions-container {
+  width: clamp(45ch, 100%, 75ch);
+}
+
+.bilingual-questions-container .subheading {
+  margin: 2.5rem 0 0.5rem;
+}
+
+.bilingual-questions-container .subheading:first-child {
+  margin-top: 0;
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  margin-top: var(--margin);
+  padding-bottom: var(--margin);
+  grid-template-columns: repeat(10, 1fr);
+  row-gap: 1.4rem;
+}
+
+.hero__heading {
+  grid-column: 1/8;
+  margin: 0;
+  min-width: 16ch;
+  font-size: 3.2rem;
+}
+
+.hero__text {
+  grid-column: 1/5;
+  grid-row: 2;
+  font-size: 1rem;
+}
+
+.hero__btn {
+  grid-column: 1/4;
+  grid-row: 3;
+  width: max-content;
+}
+
+.hero__img {
+  grid-area: 2 / 4 / 5 / 11;
+  padding: 1rem;
+}
 
 /* Media */
 .media {
@@ -99,7 +262,7 @@
   padding-top: 3rem;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 768px) {
   .media {
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
@@ -127,10 +290,6 @@
 }
 
 /* Bio */
-.bios {
-  margin: var(--margin) 0;
-}
-
 .bio {
   display: grid;
   grid-template-columns: minmax(140px, auto) auto;
@@ -146,7 +305,7 @@
   border-bottom: 1px solid var(--color-gray-medium);
   margin: 0;
   padding: 1rem 0;
-  font-family: Merriweather;
+  font-size: 1.5rem;
   white-space: nowrap;
 }
 
@@ -164,8 +323,9 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  font-family: Georgia, serif;
-  font-style: italic;
+  /*font-family: Georgia, serif;*/
+  font-family: var(--color-secondary);
+  /*font-style: italic;*/
 }
 
 .bio__list li::after {
@@ -192,56 +352,7 @@
   }
 }
 
-/* @section Typography
-*/
-body {
-  background: var(--color-white);
-  color: var(--color-black);
-  font-family: var(--font-primary);
-  font-size: var(--font-size);
-  line-height: 1.5;
-}
-
-h1,
-h2,
-h3 {
-  font-family: "Merriweather Bold";
-  margin: 0.5rem 0 1.5rem 0;
-  line-height: 1;
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-p {
-  margin: 0 0 1em;
-}
-
-a {
-  margin-bottom: 2rem;
-}
-
-/* @Page Contact */
-/* @Section Form */
-[type=text] {
-  display: block;
-  width: 100%;
-}
-
-[type=radio] {
-  margin: 6px 0;
-}
-
-form {
-  display: grid;
-  gap: 1rem;
-}
-
-textarea {
-  width: 100%;
-  resize: none;
-}
+/* Form */
 
 .form-wrapper {
   width: clamp(100px, 100%, 600px);
@@ -278,4 +389,106 @@ textarea {
 
 .emoji {
   font-size: 1.3rem;
+}
+
+/* Buttons */
+button {
+  font-family: var(--font-primary);
+}
+
+.btn--primary {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border: none;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 2rem;
+  letter-spacing: 0.03rem;
+  line-height: 100%;
+  box-shadow: var(--btn-shadow);
+  transition: box-shadow 250ms ease-in-out;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+/* @section Typography
+*/
+
+body {
+  background: var(--color-white);
+  color: var(--color-black);
+  font-family: var(--font-secondary--light);
+  font-size: var(--font-size);
+  line-height: 1.5;
+}
+
+.h1,
+h1,
+h2,
+h3 {
+  font-family: var(--font-primary);
+  margin: 0.5rem 0 1.5rem 0;
+  line-height: 1;
+}
+
+.h1,
+h1 {
+  font-size: 3rem;
+}
+
+h2,
+h3 {
+  font-weight: 400;
+  letter-spacing: 0.03rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: var(--spacing);
+  margin: 0 0 1em;
+}
+
+.subheading {
+  font-family: var(--font-secondary);
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+
+  .subheading {
+    font-size: 1.2rem;
+  }
+}
+
+a {
+  margin-bottom: 2rem;
+}
+
+[type=text] {
+  display: block;
+  width: 100%;
+}
+
+[type=radio] {
+  margin: 6px 0;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
 }
