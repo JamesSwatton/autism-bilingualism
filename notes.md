@@ -9,11 +9,27 @@
 [ ] Create modified version of dude_sit illustration - it sould have elements of language in it; a phone with music or video playing, bird singing? 
 
 ## Home
+[ ] Add responsive styling
+
 ## Resources
+[ ] Add responsive styling
+[ ] Add play svg to watch video button.
+[ ] Create video modal/overlay
+[ ] Research how languages on website are crawled by search engines. How to optimise for different languages, is it even necessary? 
+
 ## About
+[ ] Add responsive styling
 [ ] Get headshot of Bernard
 
 Bios:
 	- Rachael: child development / childrens voices in education / nerodiversity
 	- Bernard: adult autistic experience / social cognition
+
 ## Contact
+[ ] Add responsive styling
+[ ] Add success or failiar on form submission
+[ ] Style form more so it's inline with the rest of the site.
+[ ] Perhaps the form should be a modal/dialog instead of being part of the main flow of the page?
+
+## Practitioners
+[ ] Design practitioners page.
