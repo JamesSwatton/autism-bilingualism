@@ -7,6 +7,10 @@
 [ ] Unify margins ratios on typography - currently too many different margins being used.
 [ ] Monochrome images with slight noise added to create a tiny bit of texture is better than current halftone effect. Modify all images to have this style.
 [ ] Create modified version of dude_sit illustration - it sould have elements of language in it; a phone with music or video playing, bird singing? 
+[ ] Add aria labels across whole site.
+[ ] Make text resize like mailchimp developer site
+[ ] Add logos and quick contact info to footer
+[ ] Create nav bar
 
 ## Home
 [ ] Add responsive styling
@@ -16,8 +20,10 @@
 [ ] Add play svg to watch video button.
 [ ] Create video modal/overlay
 [ ] Research how languages on website are crawled by search engines. How to optimise for different languages, is it even necessary? 
+[ ] Add ways to share through social media - twitter and facebook.
 
 ## About
+[x] Create monochrome version of illustration.
 [ ] Add responsive styling
 [ ] Get headshot of Bernard
 
@@ -33,3 +39,16 @@ Bios:
 
 ## Practitioners
 [ ] Design practitioners page.
+[ ] Create illustration for paper abstracts. Perhaps this could be a some random textures and shapes that get randomly assigned every time the page loads?
+[ ] Add seminar video and external video links.
+[ ] IntersectionObserver is currently working for toc but could do with some tweeking - there is a dead zone between sections that means the toc won't have an active selection.
+
+
+## Subscribe
+[ ] Create mailchimp subscription form
+
+---
+
+## Things I've learnt
+
+
