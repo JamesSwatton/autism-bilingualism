@@ -16,15 +16,15 @@
 [ ] Add responsive styling
 
 ## Resources
-[ ] Add responsive styling
+[x] Add responsive styling
+[x] Create video modal/overlay
 [ ] Add play svg to watch video button.
-[ ] Create video modal/overlay
 [ ] Research how languages on website are crawled by search engines. How to optimise for different languages, is it even necessary? 
 [ ] Add ways to share through social media - twitter and facebook.
 
 ## About
 [x] Create monochrome version of illustration.
-[ ] Add responsive styling
+[x] Add responsive styling
 [ ] Get headshot of Bernard
 
 Bios:
