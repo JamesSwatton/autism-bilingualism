@@ -19,6 +19,7 @@
 [x] Add responsive styling
 [x] Create video modal/overlay
 [ ] Add play svg to watch video button.
+[ ] Add close svg to iframe window.
 [ ] Research how languages on website are crawled by search engines. How to optimise for different languages, is it even necessary? 
 [ ] Add ways to share through social media - twitter and facebook.
 
@@ -38,8 +39,8 @@ Bios:
 [ ] Perhaps the form should be a modal/dialog instead of being part of the main flow of the page?
 
 ## Practitioners
-[ ] Design practitioners page.
-[ ] Create illustration for paper abstracts. Perhaps this could be a some random textures and shapes that get randomly assigned every time the page loads?
+[x] Design practitioners page.
+[ ] Create dropdown for PDF downloads.
 [ ] Add seminar video and external video links.
 [ ] IntersectionObserver is currently working for toc but could do with some tweeking - there is a dead zone between sections that means the toc won't have an active selection.
 

@@ -49,7 +49,8 @@
   --container-max-width: 75em;
   --text-width: clamp(45ch, 100%, 75ch);
   /* Margins, spacings, borders */
-  --margin: 4.5rem;
+  --margin-md: 2rem;
+  --margin: 3.5rem;
   --border-radius: 6px;
   /* Breakpoints */
   /* Can't be used in media queries so just for reference */
@@ -252,7 +253,7 @@
   display: block;
 }
 
-.info-wrapper p:first-child {
+.info-wrapper>p {
   cursor: pointer;
 
   &:hover {
@@ -260,7 +261,7 @@
   }
 }
 
-.question-wrapper.opened .info-wrapper p:first-child {
+.question-wrapper.opened .info-wrapper>p {
   color: var(--color-primary);
   text-decoration: none;
 }
@@ -268,6 +269,16 @@
 .info-wrapper .info {
   margin: 8px 0;
   display: none;
+
+  & div {
+    margin: 1rem 0 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-gray-medium);
+
+    & p {
+      margin-bottom: 0.5rem;
+    }
+  }
 }
 
 /* Article */
@@ -691,6 +702,26 @@ button {
 /**
  * Misc (type)
  */
+.clamp-width {
+  width: clamp(45ch, 100%, 75ch);
+}
+
+.font-primary {
+  font-family: var(--font-primary);
+}
+
+.font-secondary {
+  font-family: var(--font-secondary);
+}
+
+.uppercase {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.em {
+  font-style: italic;
+}
 
 .banner {
   display: block;
@@ -788,7 +819,8 @@ a:hover {
   color: var(--color-primary-dark);
 }
 
-[id^="ref-"] a:after {
+[id^="ref-"] a:after,
+.info a:after {
   content: url("../assets/open-in-new.svg");
   color: var(--color-primary);
 
@@ -841,6 +873,54 @@ ol ul {
 }
 
 /**
+ * @bugfix Prevent webkit from removing list semantics
+ * 1. Add a non-breaking space
+ * 2. Make sure it doesn't mess up the DOM flow
+ */
+.list-inline,
+.list-unstyled {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+}
+
+.list-inline>li::before,
+.list-unstyled>li::before {
+  content: " ";
+  /* 1 */
+  position: absolute;
+  /* 2 */
+}
+
+/**
+ * Removes list styling.
+ * For semantic reasons, should only be used on unordered lists.
+ */
+.list-unstyled {
+  margin-left: 0;
+}
+
+/**
+ * Display lists on a single line.
+ */
+.list-inline {
+  margin-left: -0.5em;
+  margin-right: -0.5em;
+  padding: 0;
+}
+
+.list-inline>li {
+  display: inline-block;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-right: 1px solid var(--color-gray-medium);
+
+  &:last-of-type {
+    border: none;
+  }
+}
+
+/**
  * Text colors
  */
 .text-muted {
@@ -867,4 +947,23 @@ iframe {
   display: block;
   width: 800px;
   aspect-ratio: 16/9;
+}
+
+.video {
+  display: block;
+  margin: 0 auto;
+  border-radius: 1rem;
+  margin: 1rem auto;
+}
+
+/**
+ * Margins
+ */
+
+.margin-top-md {
+  margin-top: var(--margin-md);
+}
+
+.margin-btm-lg {
+  margin-bottom: var(--margin);
 }
