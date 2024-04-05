@@ -10,7 +10,10 @@
 [ ] Add aria labels across whole site.
 [ ] Make text resize like mailchimp developer site
 [ ] Add logos and quick contact info to footer
-[ ] Create nav bar
+[x] Create nav bar
+[ ] Refactor question-wrapper to so that it's not just for questions and unopinionated about internal element types. (i.e. use class names as targets instead of elements)
+[x] Make sure formatting is correct for screen reader mode. Some information isn't rendering on resources page. *Questions should be an h3 element to help with readability*
+[ ] Try and fix outside link svg sizing/insertion on refereces and abstracts.
 
 ## Home
 [ ] Add responsive styling
@@ -40,13 +43,14 @@ Bios:
 
 ## Practitioners
 [x] Design practitioners page.
+[x] Fix whitespace insertion between inline-list items on papers section.
 [ ] Create dropdown for PDF downloads.
 [ ] Add seminar video and external video links.
 [ ] IntersectionObserver is currently working for toc but could do with some tweeking - there is a dead zone between sections that means the toc won't have an active selection.
 
 
 ## Subscribe
-[ ] Create mailchimp subscription form
+[x] Create mailchimp subscription form
 
 ---
 
