@@ -26,13 +26,13 @@ function scrollHide() {
 //
 const body = document.querySelector('body');
 
-body.style.marginTop = `${headerHeight}px`;
+body.style.marginTop = `calc(${header.offsetHeight}px + 1rem)`;
 
 const resizeObserver = new ResizeObserver(() => {
 	newHeight = header.offsetHeight;
 
 	if (newHeight !== lastHeight) {
-		body.style.marginTop = `${header.offsetHeight}px`;
+		body.style.marginTop = `calc(${header.offsetHeight}px + 1rem)`;
 		lastHeight = header.offsetHeight;
 		menuCheckbox.checked = false;
 	}

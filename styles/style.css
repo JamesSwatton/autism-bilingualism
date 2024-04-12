@@ -932,10 +932,12 @@
 .form-wrapper {
   width: clamp(100px, 100%, 600px);
   margin: 0 auto;
+  margin-bottom: 4rem;
   padding: 3rem;
   border-radius: var(--border-radius);
   background-color: white;
   box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
+  font-family: var(--font-primary);
 
   & h2 {
     margin-bottom: 2.5rem;
@@ -973,6 +975,11 @@
 
 [type=radio] {
   margin: 6px 0;
+  cursor: pointer;
+}
+
+[type=radio] + label {
+  cursor: pointer;
 }
 
 form {
@@ -1002,6 +1009,7 @@ button {
   line-height: 100%;
   box-shadow: var(--btn-shadow);
   transition: box-shadow 250ms ease-in-out;
+  text-align: center; 
 
   &:hover {
     box-shadow: none;
@@ -1075,7 +1083,6 @@ body {
   font-family: var(--font-secondary--light);
   font-size: var(--font-size);
   line-height: 1.5;
-  padding-top: 1px;
   /* overflow-x: hidden; */
 }
 

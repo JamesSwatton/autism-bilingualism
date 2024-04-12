@@ -23,7 +23,7 @@
           way possible. <strong>None of this information will be shared and is for research purposes only.</strong>
           Thank you.</p>
       </div>
-      <img src="./assets/computer_flipped_2.png" class="media__img" />
+      <img src="./assets/computer_monochrome.png" class="media__img" />
     </div>
   </section>
   <section>
@@ -67,23 +67,25 @@
             <legend>How useful did you find this site?</legend>
             <div class="scale-wrapper">
               <div class="scale">
-                <input type="radio" name="how_useful" value="not_at_all_useful" required>
+                <input type="radio" name="how_useful" value="not_at_all_useful"
+                    id="not_at_all_useful"required>
                 <label for="not_at_all_useful" class="emoji">☹️</label>
               </div>
               <div class="scale">
-                <input type="radio" name="how_useful" value="slightly_useful">
+                <input type="radio" name="how_useful" value="slightly_useful" id="slightly_useful">
                 <label for="slightly_useful" class="emoji">🙁</label>
               </div>
               <div class="scale">
-                <input type="radio" name="how_useful" value="somewhat_useful">
+                <input type="radio" name="how_useful" value="somewhat_useful" id="somewhat_useful">
                 <label for="somewhat_useful" class="emoji">😐</label>
               </div>
               <div class="scale">
-                <input type="radio" name="how_useful" value="very_useful">
+                <input type="radio" name="how_useful" value="very_useful" id="very_useful">
                 <label for="very_useful" class="emoji">🙂</label>
               </div>
               <div class="scale">
-                <input type="radio" name="how_useful" value="extremely_useful">
+                <input type="radio" name="how_useful" value="extremely_useful"
+                    id="extremely_useful">
                 <label for="extremely_useful" class="emoji">😀</label>
               </div>
             </div>
@@ -93,23 +95,25 @@
             <legend>How likely are you to recommend this site to parents?</legend>
             <div class="scale-wrapper">
               <div class="scale">
-                <input type="radio" name="how_likely" value="not_at_all_likely" required>
+                <input type="radio" name="how_likely" value="not_at_all_likely"
+                    id="not_at_all_likely" required>
                 <label for="not_at_all_likely" class="emoji">☹️</label>
               </div>
               <div class="scale">
-                <input type="radio" name="how_likely" value="slightly_likely">
+                <input type="radio" name="how_likely" value="slightly_likely" id="slightly_likely">
                 <label for="slightly_likely" class="emoji">🙁</label>
               </div>
               <div class="scale">
-                <input type="radio" name="how_likely" value="somewhat_likely">
+                <input type="radio" name="how_likely" value="somewhat_likely" id="somewhat_likely">
                 <label for="somewhat_likely" class="emoji">😐</label>
               </div>
               <div class="scale">
-                <input type="radio" name="how_likely" value="very_likely">
+                <input type="radio" name="how_likely" value="very_likely" id="very_likely">
                 <label for="very_likely" class="emoji">🙂</label>
               </div>
               <div class="scale">
-                <input type="radio" name="how_likely" value="extremely_likely">
+                <input type="radio" name="how_likely" value="extremely_likely"
+                    id="extremely_likely">
                 <label for="extremely_likely" class="emoji">😀</label>
               </div>
             </div>
@@ -131,11 +135,12 @@
           <fieldset id="how-found-site">
             <legend>How did you come across this site?</legend>
             <div>
-              <input type="radio" name="how_found_site" value="web_search" id="web-search" required>
+              <input type="radio" name="how_found_site" value="web_search" id="web_search" required>
               <label for="web_search">Web Search</label>
             </div>
             <div>
-              <input type="radio" name="how_found_site" value="social_media" id="social-media">
+              <input type="radio" name="how_found_site" value="social_media"
+                  id="social_media">
               <label for="social_media">Social Media</label>
             </div>
             <div>
@@ -143,7 +148,7 @@
               <label for="recommendation">Recommendation</label>
               <select name="recommendation_select" aria-label="recommendation_select" id="recommendation-select"
                 style="display: none">
-                <option value="">--Please choose an option--</option>
+                <!-- <option value="">--Please choose an option--</option> -->
                 <option value="teacher">Teacher</option>
                 <option value="practitioner">Practitioner / Clinician</option>
                 <option value="parent">Parent</option>
@@ -155,7 +160,7 @@
           <label for="message">Is there anything else you'd like to tell us?</label>
           <textarea rows="4" name="message" id="message"></textarea>
 
-          <button type="submit">Submit</button>
+          <button type="submit" class="btn--primary margin-top-md">Submit</button>
         </form>
       </div>
     </div>
