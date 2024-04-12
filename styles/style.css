@@ -93,7 +93,7 @@
   width: 100vw;
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-rows: repeat(2 max-content);
+  grid-template-rows: repeat(2, max-content);
   border-bottom: 0.5px solid var(--color-gray-medium);
   background: var(--color-white);
   z-index: 10;
@@ -113,9 +113,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  /* align-items: center; */
-  padding: 0.5rem 1rem 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 2rem 0.5rem 1rem;
 }
 
 @media (max-width: 710px) {
@@ -333,6 +331,7 @@
   width: 100vw;
   height: 100vh;
   overflow: scroll;
+  scrollbar-width: none;
   & .nav__mobile {
     float: right;
     display: flex;
@@ -1076,7 +1075,8 @@ body {
   font-family: var(--font-secondary--light);
   font-size: var(--font-size);
   line-height: 1.5;
-  overflow-x: hidden;
+  padding-top: 1px;
+  /* overflow-x: hidden; */
 }
 
 .h1,

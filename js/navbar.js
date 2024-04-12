@@ -57,8 +57,8 @@ const menuCheckbox = document.querySelector('#menu-checkbox');
 
 menuCheckbox.addEventListener('change', (e) => {
 	if (e.currentTarget.checked) {
-		document.documentElement.style.overflowY = "hidden";
+		document.documentElement.style.position = "fixed";
 	} else {
-		document.documentElement.style.overflowY = "scroll";
+		document.documentElement.style.position = "relative";
 	}
 })
