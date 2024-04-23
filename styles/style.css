@@ -378,6 +378,71 @@
     display: block;
   }
 }
+
+
+/**
+ * Footer
+ **/
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  color: var(--color-primary);
+  padding: 2rem 4rem;
+  border-top: 3px solid var(--color-primary);
+}
+
+.logos {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  display: flex;
+  & img {
+    align-self: center;
+  }
+}
+
+.nav-footer {
+  font-family: var(--font-primary);
+  font-size: 1.2rem;
+  & ul {
+    list-style-type: none;
+  }
+  & a {
+    text-decoration: none;
+  }
+}
+
+#logo-1 {
+  min-width: 85px;
+  max-width: 145px;
+}
+
+#logo-2 {
+  min-width: 80px;
+  max-width: 110px;
+}
+
+#logo-3 {
+  min-width: 60px;
+  max-width: 70px;
+}
+
+#logo-4 {
+  min-width: 90px;
+  max-width: 120px;
+}
+
+#logo-5 {
+  min-width: 120px;
+  max-width: 170px;
+}
+
 /**
  * General
  **/
@@ -740,6 +805,7 @@
   grid-row: 2;
   font-size: 1rem;
   margin-left: 2rem;
+  margin-top: 1rem;
 }
 
 .hero__btn {
