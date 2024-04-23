@@ -1,33 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title></title>
-	<link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-	<div class="footer-wrapper">
-	<footer>
-		<div>
-		<div class="logos">
-			<div class="logo" id="logo-1"><img src="./assets/logos/autism_europe__logo.png" alt=""></div>
-			<div class="logo" id="logo-2"><img src="./assets/logos/qmu__logo.png" alt=""></div>
-			<div class="logo" id="logo-3"><img src="./assets/logos/edi_uni__logo.png" alt=""></div>
-			<div class="logo" id="logo-4"><img src="./assets/logos/firah__logo.png" alt=""></div>
-			<div class="logo" id="logo-5"><img src="./assets/logos/bilingualism_matters__logo.png" alt=""></div>
-		</div>
-		<p class="margin--none">© Autism and Bilingualism</p>
-		</div>
-		<nav class="nav-footer">
-				<ul>
-					<li><a href="./resources/">Resources</a></li>
-					<li><a href="./about.html">About</a></li>
-					<li><a href="./contact.html">Contact</a></li>
-					<li><a href="./practitioners/">Practitioners</a></li>
-				</ul>
-		</nav>
-		<div>
-			<button class="back-to-top" aria-label="Back to top">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 150 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
     <g transform="matrix(1,0,0,1,-1250.18,-734.787)">
         <g transform="matrix(0.878308,0,0,0.878308,175.906,90.627)">
@@ -52,27 +24,3 @@
         </g>
     </g>
 </svg>
-			</button>
-			<div class="socials-wrapper">
-				<div class="social">
-					<a href="https://www.facebook.com" target="_blank"><img
-							src="./assets/logos/facebook__logo.png" alt="facebook logo"></a>
-				</div>
-				<div class="social">
-					<a href="https://www.x.com" target="_blank"><img src="./assets/logos/x__logo.png" alt="x
-							logo"></a>
-				</div>
-			</div>
-		</div>
-	</footer>
-	</div>
-	<script>
-		const scrollTopBtn = document.querySelector('.back-to-top');
-
-		scrollTopBtn.addEventListener('click', () => {
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;
-		})
-	</script>
-</body>
-</html>

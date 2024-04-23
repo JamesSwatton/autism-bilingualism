@@ -383,14 +383,27 @@
 /**
  * Footer
  **/
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  color: var(--color-primary);
-  padding: 2rem 4rem;
+.footer-wrapper {
   border-top: 3px solid var(--color-primary);
+}
+
+footer {
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  color: var(--color-primary);
+  padding: 1.5rem;
+}
+
+footer>div:first-child, footer>div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.margin--none {
+  margin: 0;
 }
 
 .logos {
@@ -409,9 +422,10 @@ footer {
 
 .nav-footer {
   font-family: var(--font-primary);
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   & ul {
     list-style-type: none;
+    margin: 0;
   }
   & a {
     text-decoration: none;
@@ -419,30 +433,50 @@ footer {
 }
 
 #logo-1 {
-  min-width: 85px;
-  max-width: 145px;
+  min-width: 90px;
+  max-width: 120px;
 }
 
 #logo-2 {
   min-width: 80px;
-  max-width: 110px;
+  max-width: 100px;
 }
 
 #logo-3 {
-  min-width: 60px;
+  min-width: 50px;
   max-width: 70px;
 }
 
 #logo-4 {
   min-width: 90px;
-  max-width: 120px;
+  max-width: 100px;
 }
 
 #logo-5 {
-  min-width: 120px;
-  max-width: 170px;
+  min-width: 100px;
+  max-width: 120px;
 }
 
+.back-to-top {
+  cursor: pointer;
+  max-width: 140px;
+  min-width: 100px;
+}
+
+.socials-wrapper {
+  display: flex;
+  gap: 1rem;
+  align-self: end;
+  & .social {
+    width: 20px;
+  }
+}
+
+@media(max-width: 1210px) {
+  .nav-footer {
+    display: none;
+  }
+}
 /**
  * General
  **/
