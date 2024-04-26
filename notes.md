@@ -33,9 +33,9 @@ with readability*
 ## Resources
 [ ] Add play svg to watch video button.
 [ ] Add close svg to iframe window.
-[ ] Research how languages on website are crawled by search engines. How to
-optimise for different languages, is it even necessary? 
 [ ] Add ways to share through social media - twitter and facebook.
+[?] Research how languages on website are crawled by search engines. How to
+optimise for different languages, is it even necessary? 
 [x] Add responsive styling
 [x] Create video modal/overlay
 
