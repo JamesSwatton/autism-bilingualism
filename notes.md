@@ -39,6 +39,31 @@ optimise for different languages, is it even necessary?
 [x] Add responsive styling
 [x] Create video modal/overlay
 
+Languages:
+[x] English
+[x] French
+[x] Italian
+[ ] Arabic
+[x] Irish
+[ ] Bengali
+[ ] Chinese
+[ ] Czech
+[ ] Greek
+[ ] Montenegrin
+[ ] Norweigan
+[x] Polish
+[ ] Portugese
+[ ] Punjabi
+[ ] Romanian
+[ ] Scottish Gaelic
+[ ] Somali
+[ ] Spanish
+[ ] Turkish
+[ ] Ukranian
+[ ] Urdu
+[ ] Welsh
+[?] German (needs a better translation)
+
 ## About
 [ ] Get headshot of Bernard
 [x] Create monochrome version of illustration.
