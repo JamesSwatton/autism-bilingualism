@@ -526,9 +526,10 @@ footer>div:last-child {
 
 .clickable {
   cursor: pointer;
+  color: var(--color-primary);
 
   &:hover {
-    color: var(--color-primary);
+    color: var(--color-black);
   }
 }
 
@@ -544,6 +545,12 @@ footer>div:last-child {
   position: relative;
   width: var(--container-width);
   max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+.container--sm {
+  width: var(--container-width);
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -1265,6 +1272,20 @@ button {
   font-family: var(--font-primary);
 }
 
+.btn--lg {
+  padding: 1rem 1.5rem;
+  border: 2px solid var(--color-primary);
+  border-radius: 4px;
+
+  &:hover {
+    background-color: var(--color-primary);
+
+    & a {
+      color: var(--color-white);
+    }
+  }
+}
+
 .btn--primary {
   padding: 1rem 2rem;
   cursor: pointer;
@@ -1423,6 +1444,12 @@ a:hover {
   color: var(--color-black);
 }
 
+a:has(div) {
+  &:hover {
+    color: var(--color-white);
+  }
+}
+
 a:link {
   text-decoration: none;
 }
@@ -1435,9 +1462,13 @@ a:active {
   text-decoration: none;
 }
 
-[id^="ref-"] a:after,
-.info a:after {
+.external-link::after {
   content: url("../assets/open-in-new.svg");
+}
+
+.invert-hover:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary);
 }
 
 /**
@@ -1470,6 +1501,24 @@ a[href^="#"]>h2 {
 /**
  * List styling
  */
+
+.additional-links {
+  margin-top: var(--margin-md);
+
+  & li {
+    margin-bottom: 1.2rem;
+  }
+
+  & a {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  & p {
+    margin-top: 0.7rem;
+  }
+}
+
 ul,
 ol {
   margin: 0 0 var(--spacing) 2em;
@@ -1524,6 +1573,14 @@ ol ul {
   display: inline-block;
   padding-left: 0.5em;
   padding-right: 0.5em;
+}
+
+/**
+ * List bullet color
+ */
+
+li::marker {
+  color: var(--color-primary);
 }
 
 /**
