@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="../styles/style.css">
+	<base href="http://127.0.0.1:8080/">
 </head>
 
 <body>
@@ -15,20 +16,24 @@
 			<a href="index.html"><img src="assets/logo.svg" /></a>
 		</div>
 		<div class="nav-wrapper">
-			<div class="language-select-btn" role="button" aria-pressed="false">
-				<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-					<path
-						d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z" />
-				</svg>
+			<div>
+				<div class="lang-icon language-select-btn" role="button" aria-pressed="false">
+					<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+						<path
+							d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z" />
+					</svg>
+				</div>
 			</div>
-			<nav>
-				<ul class="nav">
-					<li><a href="resources/index.html">Resources</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="practitioners/index.html">Practitioners</a></li>
-				</ul>
-			</nav>
+			<div class="nav">
+				<nav>
+					<ul>
+						<li><a href="resources/index.html">Resources</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="practitioners/index.html">Practitioners</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 		<div class="selected-language">
 			<p>English</p>
@@ -47,7 +52,7 @@
 				<li><a href="">English</a></li>
 				<li><a href="">French / Français</a></li>
 				<li><a href="">Greek / Ελληνικά</a></li>
-				<li><a href="">Italian / Italiano</a></li>
+				<li><a href="resources/italian.html">Italian / Italiano</a></li>
 				<li><a href="">Polish / Polski</a></li>
 				<li><a href="">Punjab / ਪੰਜਾਬ</a></li>
 				<li><a href="">Romanian / Română</a></li>
@@ -105,126 +110,90 @@
 			</nav>
 		</aside>
 	</header>
+	<main>
+		<!-- Page content -->
 
-	<!-- Page content -->
-
-	<section class="background-gradient">
-		<div class="container home">
-			<h1 class="home__heading text-primary">Should Your Autistic Child Learn
-				More Than One Languge?</h1>
-			<img src="/assets/autism-bilingualism--main-guy-04.png" class="home__img">
-			<p class="home__text">It is natural to prefer to speak your own language with your children. If you
-				worry that speaking your own
-				language with your autistic child will be a problem, then this site is for you.</p>
-			<a class="home__btn" href="./resources/"><button class="btn--primary">Learn More</button></a>
-		</div>
-	</section>
-	<section class="background-primary">
-		<div class="container home__welcome">
-			<div class="width-50 flex align-cnt">
-				<img src="assets/hi-ciao-hola.svg" alt="hello in multiple languages" style="max-width: 450px">
+		<section class="background-gradient">
+			<div class="container home">
+				<h1 class="home__heading text-primary">Should Your Autistic Child Learn
+					More Than One Languge?</h1>
+				<img src="/assets/autism-bilingualism--main-guy-04.png" class="home__img">
+				<p class="home__text">It is natural to prefer to speak your own language with your children. If you
+					worry that speaking your own
+					language with your autistic child will be a problem, then this site is for you.</p>
+				<a class="home__btn" href="./resources/"><button class="btn--primary">Learn More</button></a>
 			</div>
-			<div class="width-50 text-white">
-				<p>We are researchers at Queen Margaret University & The University of Edinburgh who work on
-					better understanding
-					bilingualism for autistic people. We work with autistic people and their families,
-					practitioners and educators
-					to make sure that our research reaches the people that need it the most.</p>
-
-				<p>We hope that these resources will help parents communicate with their children without being
-					worried, and show
-					that speaking your preferred language can only bring you closer to your children.</p>
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class="container flex margin-v-lg em strong text-primary font-larger">
-			<a href="/resources/">
-				Does growing up with several languages confuse autistic
-				children?
-			</a>
-			<a href="/resources/">Should I stop speaking my language and use English instead?</a>
-			<a href="/resources/">Are there good things about growing up with several languages for my autistic child?</a>
-		</div>
-	</section>
-
-	<div class="footer-wrapper">
-		<footer>
-			<div>
-				<div class="logos">
-					<div class="logo" id="logo-1"><img src="./assets/logos/autism_europe__logo.png" alt=""></div>
-					<div class="logo" id="logo-2"><img src="./assets/logos/qmu__logo.png" alt=""></div>
-					<div class="logo" id="logo-3"><img src="./assets/logos/edi_uni__logo.png" alt=""></div>
-					<div class="logo" id="logo-4"><img src="./assets/logos/firah__logo.png" alt=""></div>
-					<div class="logo" id="logo-5"><img src="./assets/logos/bilingualism_matters__logo.png" alt=""></div>
+		</section>
+		<section class="background-primary">
+			<div class="container home__welcome">
+				<div class="width-50 flex align-cnt">
+					<img src="assets/hi-ciao-hola.svg" alt="hello in multiple languages" style="max-width: 450px">
 				</div>
-				<p class="footer--copyright">© Autism and Bilingualism</p>
+				<div class="width-50 text-white">
+					<p>We are researchers at Queen Margaret University & The University of Edinburgh who work on
+						better understanding
+						bilingualism for autistic people. We work with autistic people and their families,
+						practitioners and educators
+						to make sure that our research reaches the people that need it the most.</p>
+
+					<p>We hope that these resources will help parents communicate with their children without being
+						worried, and show
+						that speaking your preferred language can only bring you closer to your children.</p>
+				</div>
 			</div>
-			<nav class="nav-footer">
-				<ul>
-					<li><a href="./resources/">Resources</a></li>
-					<li><a href="./about.html">About</a></li>
-					<li><a href="./contact.html">Contact</a></li>
-					<li><a href="./practitioners/">Practitioners</a></li>
-				</ul>
-			</nav>
-			<div>
-				<button class="back-to-top" aria-label="Back to top">
-					<svg width="100%" height="100%" viewBox="0 0 150 47" version="1.1" xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
-						style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
-						<g transform="matrix(1,0,0,1,-1250.18,-734.787)">
-							<g transform="matrix(0.878308,0,0,0.878308,175.906,90.627)">
-								<g>
-									<g transform="matrix(0.721534,0,0,0.721534,332.877,343.906)">
-										<circle cx="1270.55" cy="576.563" r="35.947"
-											style="fill:none;stroke:rgb(0,57,253);stroke-width:1.58px;" />
-									</g>
-									<g transform="matrix(0.762879,0,0,0.717022,372.121,295.782)">
-										<g transform="matrix(-0.462598,-0.0362051,-0.0362051,0.462598,1715.3,374.96)">
-											<path d="M1144.05,689.982L1169.14,668.528"
-												style="fill:none;stroke:rgb(0,57,253);stroke-width:6.6px;stroke-linecap:square;" />
-										</g>
-										<g transform="matrix(0.462598,-0.0362051,0.0362051,0.462598,585.204,374.96)">
-											<path d="M1144.05,689.982L1169.14,668.528"
-												style="fill:none;stroke:rgb(0,57,253);stroke-width:6.6px;stroke-linecap:square;" />
-										</g>
-									</g>
-								</g>
-								<g transform="matrix(0.621826,0,0,0.621826,577.878,403.163)">
-									<g transform="matrix(32.3678,0,0,32.3678,1313.11,582.085)">
-									</g>
-									<text x="1144.63px" y="582.085px"
-										style="font-family:'HelveticaNeue', 'Helvetica Neue';font-size:32.368px;fill:rgb(0,57,253);">Back to
-										top</text>
-								</g>
-							</g>
-						</g>
-					</svg>
-				</button>
-				<div class="socials-wrapper">
-					<div class="social">
-						<a href="https://www.facebook.com" target="_blank"><img src="./assets/logos/facebook__logo.png"
-								alt="facebook logo"></a>
+		</section>
+		<section>
+			<div class="container flex margin-top-lg em strong text-primary font-larger">
+				<a href="/resources/">
+					Does growing up with several languages confuse autistic
+					children?
+				</a>
+				<a href="/resources/">Should I stop speaking my language and use English instead?</a>
+				<a href="/resources/">Are there good things about growing up with several languages for my autistic child?</a>
+			</div>
+		</section>
+
+		<div class="footer-wrapper">
+			<footer>
+				<div>
+					<div class="logos">
+						<div class="logo" id="logo-1"><img src="./assets/logos/autism_europe__logo.png" alt=""></div>
+						<div class="logo" id="logo-2"><img src="./assets/logos/qmu__logo.png" alt=""></div>
+						<div class="logo" id="logo-3"><img src="./assets/logos/edi_uni__logo.png" alt=""></div>
+						<div class="logo" id="logo-4"><img src="./assets/logos/firah__logo.png" alt=""></div>
+						<div class="logo" id="logo-5"><img src="./assets/logos/bilingualism_matters__logo.png" alt=""></div>
 					</div>
-					<div class="social">
-						<a href="https://www.x.com" target="_blank"><img src="./assets/logos/x__logo.png" alt="x
+					<p class="footer--copyright">© Autism and Bilingualism</p>
+				</div>
+				<nav class="nav-footer">
+					<ul>
+						<li><a href="resources/">Resources</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="practitioners/">Practitioners</a></li>
+					</ul>
+				</nav>
+				<div>
+					<button class="back-to-top" aria-label="Back to top">
+						<img src="assets/icons/back_to_top.svg" alt="back to top icon">
+					</button>
+					<div class="socials-wrapper">
+						<div class="social">
+							<a href="https://www.facebook.com" target="_blank"><img src="./assets/logos/facebook__logo.png"
+									alt="facebook logo"></a>
+						</div>
+						<div class="social">
+							<a href="https://www.x.com" target="_blank"><img src="assets/logos/x__logo.png" alt="x
 							logo"></a>
+						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
-	</div>
-	<script>
-		const scrollTopBtn = document.querySelector('.back-to-top');
+			</footer>
+		</div>
+	</main>
 
-		scrollTopBtn.addEventListener('click', () => {
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;
-		})
-	</script>
 	<script src="js/navbar.js"></script>
-
+	<script src="js/footer.js"></script>
 </body>
 
 </html>

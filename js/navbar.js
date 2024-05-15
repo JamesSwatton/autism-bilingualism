@@ -26,13 +26,13 @@ function scrollHide() {
 //
 const body = document.querySelector('body');
 
-body.style.marginTop = `calc(${header.offsetHeight}px + 1rem)`;
+body.style.marginTop = `calc(${header.offsetHeight}px + 2.5rem)`;
 
 const resizeObserver = new ResizeObserver(() => {
 	newHeight = header.offsetHeight;
 
 	if (newHeight !== lastHeight) {
-		body.style.marginTop = `calc(${header.offsetHeight}px + 1rem)`;
+		body.style.marginTop = `calc(${header.offsetHeight}px + 2.5rem)`;
 		lastHeight = header.offsetHeight;
 		menuCheckbox.checked = false;
 	}
@@ -44,12 +44,15 @@ resizeObserver.observe(header);
 //
 const langSelectBtn = document.querySelector(".language-select-btn");
 const langWrapper = document.querySelector(".languages-wrapper");
+const main = document.querySelector('main');
 
 langSelectBtn.addEventListener('click', () => {
 	langWrapper.classList.toggle("visible");
 })
 
-
+main.addEventListener('click', () => {
+	langWrapper.classList.remove('visible');
+})
 
 // Disable scroll on mobile nav menu open
 //
@@ -62,3 +65,20 @@ menuCheckbox.addEventListener('change', (e) => {
 		document.documentElement.style.position = "relative";
 	}
 })
+
+// Remove resource specific nav element if not on resources page
+//
+const navWrap = document.querySelector('.nav-wrapper');
+const selLang = document.querySelector('.selected-language');
+
+const url = window.location.pathname;
+const regex = new RegExp('^/resources');
+console.log(regex.test(url));
+
+if (!regex.test(url)) {
+	navWrap.style.justifyContent = 'flex-end';
+	langSelectBtn.remove();
+	selLang.remove();
+	langWrapper.remove();
+}
+

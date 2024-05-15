@@ -7,9 +7,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../styles/style.css">
+  <base href="http://127.0.0.1:8080/">
 </head>
 
 <body>
+  <header class="nav-container">
+    <div class="logo-wrapper">
+      <a href="index.html"><img src="assets/logo.svg" /></a>
+    </div>
+    <div class="nav-wrapper">
+      <div>
+        <div class="lang-icon language-select-btn" role="button" aria-pressed="false">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <path
+              d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z" />
+          </svg>
+        </div>
+      </div>
+      <div class="nav">
+        <nav>
+          <ul>
+            <li><a href="resources/index.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="practitioners/index.html">Practitioners</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="selected-language">
+      <p>English</p>
+      <div class="download-btn" role="button">
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 16L7 11L8.4 9.55L11 12.15V4H13V12.15L15.6 9.55L17 11L12 16ZM6 20C5.45 20 4.97917 19.8042 4.5875 19.4125C4.19583 19.0208 4 18.55 4 18V15H6V18H18V15H20V18C20 18.55 19.8042 19.0208 19.4125 19.4125C19.0208 19.8042 18.55 20 18 20H6Z" />
+        </svg>
+      </div>
+    </div>
+    <div class="languages-wrapper">
+      <ul class="languages-list">
+        <li><a href="">Arabic / عربي</a></li>
+        <li><a href="">Bengali</a></li>
+        <li><a href="">Chinese / 中国人</a></li>
+        <li><a href="">English</a></li>
+        <li><a href="">French / Français</a></li>
+        <li><a href="">Greek / Ελληνικά</a></li>
+        <li><a href="resources/italian.html">Italian / Italiano</a></li>
+        <li><a href="">Polish / Polski</a></li>
+        <li><a href="">Punjab / ਪੰਜਾਬ</a></li>
+        <li><a href="">Romanian / Română</a></li>
+        <li><a href="">Scottish Gaelic / Gàidhlig na h-Alba</a></li>
+        <li><a href="">Somali / Soomaali</a></li>
+        <li><a href="">Spanish / Español</a></li>
+        <li><a href="">Turkish / Türkçe</a></li>
+        <li><a href="">Ukranian / українська</a></li>
+        <li><a href="">Urdu / اردو</a></li>
+        <li><a href="">Welsh / Cymraeg</a></li>
+      </ul>
+    </div>
+    <!--Mobile version - hamburger and sidebar-->
+    <label class="hamburger-menu">
+      <input type="checkbox" id="menu-checkbox">
+    </label>
+
+    <aside class="sidebar">
+      <nav>
+        <ul class="nav__mobile">
+          <li>
+            <a href="resources/">
+              <div class="resources-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                  <path
+                    d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z" />
+                </svg>
+                Resources
+              </div>
+            </a>
+          </li>
+          <ul class="languages-list__mobile">
+            <li><a href="">Arabic / عربي</a></li>
+            <li><a href="">Bengali</a></li>
+            <li><a href="">Chinese / 中国人</a></li>
+            <li><a href="">English</a></li>
+            <li><a href="">French / Français</a></li>
+            <li><a href="">Greek / Ελληνικά</a></li>
+            <li><a href="">Italian / Italiano</a></li>
+            <li><a href="">Polish / Polski</a></li>
+            <li><a href="">Punjab / ਪੰਜਾਬ</a></li>
+            <li><a href="">Romanian / Română</a></li>
+            <li><a href="">Scottish Gaelic / Gàidhlig na h-Alba</a></li>
+            <li><a href="">Somali / Soomaali</a></li>
+            <li><a href="">Spanish / Español</a></li>
+            <li><a href="">Turkish / Türkçe</a></li>
+            <li><a href="">Ukranian / українська</a></li>
+            <li><a href="">Urdu / اردو</a></li>
+            <li><a href="">Welsh / Cymraeg</a></li>
+          </ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="practitioners/">Practioners</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </header>
   <main class="container" style="display: block; gap: 3rem">
     <section class="margin-btm-lg">
       <!-- intro and practitioner resources -->
@@ -25,11 +125,11 @@
           engaging and easier to digest. Finally you will find links to additional resources and adjacent topics. If
           you
           have found any of this helpful please leave us <a class="invert-hover"
-            href="../contact.html#feedback">feedback</a> and share
+            href="contact.html#feedback">feedback</a> and share
           anthing you find
           of use. Thank you!</p>
         <div>
-          <a href="./info.html">
+          <a href="practitioners/info.html">
             <div class="btn--lg" style="min-width: 430px">
               <h2>Autism and Bilingualism: <strong><em>Evidence and
                     Recommendations for Clinical
@@ -382,7 +482,46 @@
       </section>
     </div>
   </main>
-  <script src="../js/questions.js" />
+  <div class="footer-wrapper">
+    <footer>
+      <div>
+        <div class="logos">
+          <div class="logo" id="logo-1"><img src="./assets/logos/autism_europe__logo.png" alt=""></div>
+          <div class="logo" id="logo-2"><img src="./assets/logos/qmu__logo.png" alt=""></div>
+          <div class="logo" id="logo-3"><img src="./assets/logos/edi_uni__logo.png" alt=""></div>
+          <div class="logo" id="logo-4"><img src="./assets/logos/firah__logo.png" alt=""></div>
+          <div class="logo" id="logo-5"><img src="./assets/logos/bilingualism_matters__logo.png" alt=""></div>
+        </div>
+        <p class="footer--copyright">© Autism and Bilingualism</p>
+      </div>
+      <nav class="nav-footer">
+        <ul>
+          <li><a href="resources/">Resources</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="practitioners/">Practitioners</a></li>
+        </ul>
+      </nav>
+      <div>
+        <button class="back-to-top" aria-label="Back to top">
+          <img src="assets/icons/back_to_top.svg" alt="back to top icon">
+        </button>
+        <div class="socials-wrapper">
+          <div class="social">
+            <a href="https://www.facebook.com" target="_blank"><img src="./assets/logos/facebook__logo.png"
+                alt="facebook logo"></a>
+          </div>
+          <div class="social">
+            <a href="https://www.x.com" target="_blank"><img src="assets/logos/x__logo.png" alt="x
+							logo"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="../js/questions.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script src="js/footer.js"></script>
 </body>
 
 </html>

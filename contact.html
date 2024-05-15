@@ -7,203 +7,303 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./styles/style.css">
+  <base href="http://127.0.0.1:8080/">
 </head>
 
 <body>
-  <section>
-    <div class="container media">
-      <h1 class="media__heading">Contact</h1>
-      <div class="media__text">
-        <a class="invert-hover" style="display: inline-block; margin-bottom:
+  <header class="nav-container">
+    <div class="logo-wrapper">
+      <a href="index.html"><img src="assets/logo.svg" /></a>
+    </div>
+    <div class="nav-wrapper">
+      <div>
+        <div class="lang-icon language-select-btn" role="button" aria-pressed="false">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <path
+              d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z" />
+          </svg>
+        </div>
+      </div>
+      <div class="nav">
+        <nav>
+          <ul>
+            <li><a href="resources/index.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="practitioners/index.html">Practitioners</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="selected-language">
+      <p>English</p>
+      <div class="download-btn" role="button">
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 16L7 11L8.4 9.55L11 12.15V4H13V12.15L15.6 9.55L17 11L12 16ZM6 20C5.45 20 4.97917 19.8042 4.5875 19.4125C4.19583 19.0208 4 18.55 4 18V15H6V18H18V15H20V18C20 18.55 19.8042 19.0208 19.4125 19.4125C19.0208 19.8042 18.55 20 18 20H6Z" />
+        </svg>
+      </div>
+    </div>
+    <div class="languages-wrapper">
+      <ul class="languages-list">
+        <li><a href="">Arabic / عربي</a></li>
+        <li><a href="">Bengali</a></li>
+        <li><a href="">Chinese / 中国人</a></li>
+        <li><a href="">English</a></li>
+        <li><a href="">French / Français</a></li>
+        <li><a href="">Greek / Ελληνικά</a></li>
+        <li><a href="resources/italian.html">Italian / Italiano</a></li>
+        <li><a href="">Polish / Polski</a></li>
+        <li><a href="">Punjab / ਪੰਜਾਬ</a></li>
+        <li><a href="">Romanian / Română</a></li>
+        <li><a href="">Scottish Gaelic / Gàidhlig na h-Alba</a></li>
+        <li><a href="">Somali / Soomaali</a></li>
+        <li><a href="">Spanish / Español</a></li>
+        <li><a href="">Turkish / Türkçe</a></li>
+        <li><a href="">Ukranian / українська</a></li>
+        <li><a href="">Urdu / اردو</a></li>
+        <li><a href="">Welsh / Cymraeg</a></li>
+      </ul>
+    </div>
+    <!--Mobile version - hamburger and sidebar-->
+    <label class="hamburger-menu">
+      <input type="checkbox" id="menu-checkbox">
+    </label>
+
+    <aside class="sidebar">
+      <nav>
+        <ul class="nav__mobile">
+          <li>
+            <a href="resources/">
+              <div class="resources-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                  <path
+                    d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z" />
+                </svg>
+                Resources
+              </div>
+            </a>
+          </li>
+          <ul class="languages-list__mobile">
+            <li><a href="">Arabic / عربي</a></li>
+            <li><a href="">Bengali</a></li>
+            <li><a href="">Chinese / 中国人</a></li>
+            <li><a href="">English</a></li>
+            <li><a href="">French / Français</a></li>
+            <li><a href="">Greek / Ελληνικά</a></li>
+            <li><a href="">Italian / Italiano</a></li>
+            <li><a href="">Polish / Polski</a></li>
+            <li><a href="">Punjab / ਪੰਜਾਬ</a></li>
+            <li><a href="">Romanian / Română</a></li>
+            <li><a href="">Scottish Gaelic / Gàidhlig na h-Alba</a></li>
+            <li><a href="">Somali / Soomaali</a></li>
+            <li><a href="">Spanish / Español</a></li>
+            <li><a href="">Turkish / Türkçe</a></li>
+            <li><a href="">Ukranian / українська</a></li>
+            <li><a href="">Urdu / اردو</a></li>
+            <li><a href="">Welsh / Cymraeg</a></li>
+          </ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="practitioners/">Practioners</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </header>
+  <main>
+    <section>
+      <div class="container media">
+        <h1 class="media__heading">Contact</h1>
+        <div class="media__text">
+          <a class="invert-hover" style="display: inline-block; margin-bottom:
           1rem;" href="mailto:hello@autism_bilingualism.com">hello@autism_bilingualism.com</a>
-        <p>If you would like to help with additional translations or notice any revisions are needed, please do get in
-          touch! We are a small team, but dedicated to improving and updating the site as much as we can.</p>
+          <p>If you would like to help with additional translations or notice any revisions are needed, please do get in
+            touch! We are a small team, but dedicated to improving and updating the site as much as we can.</p>
 
-        <p>If you have time then please fill in the feedback form below, it will make a huge difference for future
-          research and will only help us develop better ways of getting the information that matters to you in the best
-          way possible. <strong>None of this information will be shared and is for research purposes only.</strong>
-          Thank you.</p>
+          <p>If you have time then please fill in the feedback form below, it will make a huge difference for future
+            research and will only help us develop better ways of getting the information that matters to you in the
+            best
+            way possible. <strong>None of this information will be shared and is for research purposes only.</strong>
+            Thank you.</p>
+        </div>
+        <img src="./assets/computer_monochrome_2.png" class="media__img" />
       </div>
-      <img src="./assets/computer_monochrome_2.png" class="media__img" />
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="form-wrapper">
-        <h2 id="feedback">Feedback</h2>
-        <form>
-          <div class="field">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name">
-          </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="form-wrapper">
+          <h2 id="feedback">Feedback</h2>
+          <form>
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name">
+            </div>
 
-          <div class="field">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required>
-          </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
+            </div>
 
-          <fieldset id="type">
-            <legend>Are you a ...</legend>
-            <div>
-              <input type="radio" name="type" value="caregiver" id="caregiver" required>
-              <label for="caregiver">Caregiver</label>
-            </div>
-            <div>
-              <input type="radio" name="type" value="practitioner" id="practitioner">
-              <label for="practitioner">Practitioner</label>
-            </div>
-            <div>
-              <input type="radio" name="type" value="teacher" id="teacher">
-              <label for="teacher">Teacher</label>
-            </div>
-            <div>
-              <input type="radio" name="type" value="other" id="other">
-              <label for="other">Other</label>
-              <input type="text" name="other_detail" aria-label="other_detail_please_specify"
-                placeholder="Please specify ..." id="other-detail" style="display: none">
-            </div>
-          </fieldset>
+            <fieldset id="type">
+              <legend>Are you a ...</legend>
+              <div>
+                <input type="radio" name="type" value="caregiver" id="caregiver" required>
+                <label for="caregiver">Caregiver</label>
+              </div>
+              <div>
+                <input type="radio" name="type" value="practitioner" id="practitioner">
+                <label for="practitioner">Practitioner</label>
+              </div>
+              <div>
+                <input type="radio" name="type" value="teacher" id="teacher">
+                <label for="teacher">Teacher</label>
+              </div>
+              <div>
+                <input type="radio" name="type" value="other" id="other">
+                <label for="other">Other</label>
+                <input type="text" name="other_detail" aria-label="other_detail_please_specify"
+                  placeholder="Please specify ..." id="other-detail" style="display: none">
+              </div>
+            </fieldset>
 
-          <fieldset>
-            <legend>How useful did you find this site?</legend>
-            <div class="scale-wrapper">
-              <div class="scale">
-                <input type="radio" name="how_useful" value="not_at_all_useful" id="not_at_all_useful" required>
-                <label for="not_at_all_useful" class="emoji">☹️</label>
+            <fieldset>
+              <legend>How useful did you find this site?</legend>
+              <div class="scale-wrapper">
+                <div class="scale">
+                  <input type="radio" name="how_useful" value="not_at_all_useful" id="not_at_all_useful" required>
+                  <label for="not_at_all_useful" class="emoji">☹️</label>
+                </div>
+                <div class="scale">
+                  <input type="radio" name="how_useful" value="slightly_useful" id="slightly_useful">
+                  <label for="slightly_useful" class="emoji">🙁</label>
+                </div>
+                <div class="scale">
+                  <input type="radio" name="how_useful" value="somewhat_useful" id="somewhat_useful">
+                  <label for="somewhat_useful" class="emoji">😐</label>
+                </div>
+                <div class="scale">
+                  <input type="radio" name="how_useful" value="very_useful" id="very_useful">
+                  <label for="very_useful" class="emoji">🙂</label>
+                </div>
+                <div class="scale">
+                  <input type="radio" name="how_useful" value="extremely_useful" id="extremely_useful">
+                  <label for="extremely_useful" class="emoji">😀</label>
+                </div>
               </div>
-              <div class="scale">
-                <input type="radio" name="how_useful" value="slightly_useful" id="slightly_useful">
-                <label for="slightly_useful" class="emoji">🙁</label>
-              </div>
-              <div class="scale">
-                <input type="radio" name="how_useful" value="somewhat_useful" id="somewhat_useful">
-                <label for="somewhat_useful" class="emoji">😐</label>
-              </div>
-              <div class="scale">
-                <input type="radio" name="how_useful" value="very_useful" id="very_useful">
-                <label for="very_useful" class="emoji">🙂</label>
-              </div>
-              <div class="scale">
-                <input type="radio" name="how_useful" value="extremely_useful" id="extremely_useful">
-                <label for="extremely_useful" class="emoji">😀</label>
-              </div>
-            </div>
-          </fieldset>
+            </fieldset>
 
-          <fieldset>
-            <legend>How likely are you to recommend this site to parents?</legend>
-            <div class="scale-wrapper">
-              <div class="scale">
-                <input type="radio" name="how_likely" value="not_at_all_likely" id="not_at_all_likely" required>
-                <label for="not_at_all_likely" class="emoji">☹️</label>
+            <fieldset>
+              <legend>How likely are you to recommend this site to parents?</legend>
+              <div class="scale-wrapper">
+                <div class="scale">
+                  <input type="radio" name="how_likely" value="not_at_all_likely" id="not_at_all_likely" required>
+                  <label for="not_at_all_likely" class="emoji">☹️</label>
+                </div>
+                <div class="scale">
+                  <input type="radio" name="how_likely" value="slightly_likely" id="slightly_likely">
+                  <label for="slightly_likely" class="emoji">🙁</label>
+                </div>
+                <div class="scale">
+                  <input type="radio" name="how_likely" value="somewhat_likely" id="somewhat_likely">
+                  <label for="somewhat_likely" class="emoji">😐</label>
+                </div>
+                <div class="scale">
+                  <input type="radio" name="how_likely" value="very_likely" id="very_likely">
+                  <label for="very_likely" class="emoji">🙂</label>
+                </div>
+                <div class="scale">
+                  <input type="radio" name="how_likely" value="extremely_likely" id="extremely_likely">
+                  <label for="extremely_likely" class="emoji">😀</label>
+                </div>
               </div>
-              <div class="scale">
-                <input type="radio" name="how_likely" value="slightly_likely" id="slightly_likely">
-                <label for="slightly_likely" class="emoji">🙁</label>
-              </div>
-              <div class="scale">
-                <input type="radio" name="how_likely" value="somewhat_likely" id="somewhat_likely">
-                <label for="somewhat_likely" class="emoji">😐</label>
-              </div>
-              <div class="scale">
-                <input type="radio" name="how_likely" value="very_likely" id="very_likely">
-                <label for="very_likely" class="emoji">🙂</label>
-              </div>
-              <div class="scale">
-                <input type="radio" name="how_likely" value="extremely_likely" id="extremely_likely">
-                <label for="extremely_likely" class="emoji">😀</label>
-              </div>
-            </div>
-          </fieldset>
+            </fieldset>
 
-          <fieldset>
-            <legend>Has this changed your opinion about autism and bilingualism?</legend>
-            <div>
-              <input type="radio" name="changed_opinion" value="yes" id="yes" required>
-              <label for="yes">Yes</label>
-            </div>
-            <div>
-              <input type="radio" name="changed_opinion" value="no" id="no">
-              <label for="no">No</label>
-              <input type="text" placeholder="Please tell us how ..." name="changed_opinion_detail">
-            </div>
-          </fieldset>
+            <fieldset>
+              <legend>Has this changed your opinion about autism and bilingualism?</legend>
+              <div>
+                <input type="radio" name="changed_opinion" value="yes" id="yes" required>
+                <label for="yes">Yes</label>
+              </div>
+              <div>
+                <input type="radio" name="changed_opinion" value="no" id="no">
+                <label for="no">No</label>
+                <input type="text" placeholder="Please tell us how ..." name="changed_opinion_detail">
+              </div>
+            </fieldset>
 
-          <fieldset id="how-found-site">
-            <legend>How did you come across this site?</legend>
-            <div>
-              <input type="radio" name="how_found_site" value="web_search" id="web_search" required>
-              <label for="web_search">Web Search</label>
-            </div>
-            <div>
-              <input type="radio" name="how_found_site" value="social_media" id="social_media">
-              <label for="social_media">Social Media</label>
-            </div>
-            <div>
-              <input type="radio" name="how_found_site" value="recommendation" id="recommendation">
-              <label for="recommendation">Recommendation</label>
-              <select name="recommendation_select" aria-label="recommendation_select" id="recommendation-select"
-                style="display: none">
-                <!-- <option value="">--Please choose an option--</option> -->
-                <option value="teacher">Teacher</option>
-                <option value="practitioner">Practitioner / Clinician</option>
-                <option value="parent">Parent</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-          </fieldset>
+            <fieldset id="how-found-site">
+              <legend>How did you come across this site?</legend>
+              <div>
+                <input type="radio" name="how_found_site" value="web_search" id="web_search" required>
+                <label for="web_search">Web Search</label>
+              </div>
+              <div>
+                <input type="radio" name="how_found_site" value="social_media" id="social_media">
+                <label for="social_media">Social Media</label>
+              </div>
+              <div>
+                <input type="radio" name="how_found_site" value="recommendation" id="recommendation">
+                <label for="recommendation">Recommendation</label>
+                <select name="recommendation_select" aria-label="recommendation_select" id="recommendation-select"
+                  style="display: none">
+                  <!-- <option value="">--Please choose an option--</option> -->
+                  <option value="teacher">Teacher</option>
+                  <option value="practitioner">Practitioner / Clinician</option>
+                  <option value="parent">Parent</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </fieldset>
 
-          <label for="message">Is there anything else you'd like to tell us?</label>
-          <textarea rows="4" name="message" id="message"></textarea>
+            <label for="message">Is there anything else you'd like to tell us?</label>
+            <textarea rows="4" name="message" id="message"></textarea>
 
-          <button type="submit" class="btn--primary margin-top-md">Submit</button>
-        </form>
+            <button type="submit" class="btn--primary margin-top-md">Submit</button>
+          </form>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <script>
-    let url = 'https://test-site.pockethost.io/api/collections/forms/records';
-    let form = document.querySelector('form');
-    let type = document.querySelector('#type');
-    let howFoundSite = document.querySelector('#how-found-site');
-    let inputOtherDetail = document.querySelector('#other-detail');
-    let recommendationSelect = document.querySelector('#recommendation-select');
-
-    function showHideEl(el, e) {
-      let prefix = el.id.split('-')[0];
-      if (e.target.type == 'radio' && e.target.id !== prefix) {
-        el.style = 'display: none';
-      } else if (e.target.id == prefix) {
-        el.style = 'display: block';
-        if (el.type == 'text') el.value = '';
-      }
-    }
-
-    function replacePairs(obj, pairs) {
-      let arr = Object.keys(obj).map((key) => [String(key).replaceAll(pairs[0][0], pairs[0][1]), obj[key].replaceAll(pairs[0][0], pairs[1][1])])
-      let newObj = Object.fromEntries(arr);
-      return newObj;
-    }
-
-    type.addEventListener('click', (e) => {
-      showHideEl(inputOtherDetail, e);
-    })
-
-    howFoundSite.addEventListener('click', (e) => {
-      showHideEl(recommendationSelect, e);
-    })
-
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      let data = new FormData(form);
-      fetch(url, {
-        method: 'post',
-        body: data
-      }).then((res) => console.log(res))
-    })
-
-  </script>
+    </section>
+  </main>
+  <div class="footer-wrapper">
+    <footer>
+      <div>
+        <div class="logos">
+          <div class="logo" id="logo-1"><img src="./assets/logos/autism_europe__logo.png" alt=""></div>
+          <div class="logo" id="logo-2"><img src="./assets/logos/qmu__logo.png" alt=""></div>
+          <div class="logo" id="logo-3"><img src="./assets/logos/edi_uni__logo.png" alt=""></div>
+          <div class="logo" id="logo-4"><img src="./assets/logos/firah__logo.png" alt=""></div>
+          <div class="logo" id="logo-5"><img src="./assets/logos/bilingualism_matters__logo.png" alt=""></div>
+        </div>
+        <p class="footer--copyright">© Autism and Bilingualism</p>
+      </div>
+      <nav class="nav-footer">
+        <ul>
+          <li><a href="resources/">Resources</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="practitioners/">Practitioners</a></li>
+        </ul>
+      </nav>
+      <div>
+        <button class="back-to-top" aria-label="Back to top">
+          <img src="assets/icons/back_to_top.svg" alt="back to top icon">
+        </button>
+        <div class="socials-wrapper">
+          <div class="social">
+            <a href="https://www.facebook.com" target="_blank"><img src="./assets/logos/facebook__logo.png"
+                alt="facebook logo"></a>
+          </div>
+          <div class="social">
+            <a href="https://www.x.com" target="_blank"><img src="assets/logos/x__logo.png" alt="x
+							logo"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/navbar.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/footer.js"></script>
 </body>
 
 </html>

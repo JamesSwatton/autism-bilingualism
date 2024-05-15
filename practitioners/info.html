@@ -7,25 +7,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../styles/style.css">
+  <base href="http://127.0.0.1:8080/">
 </head>
 
 <body>
-  <!-- <div id=intersection-area style="position: sticky; top: 0; width: 100%"></div> -->
+  <header class="nav-container">
+    <div class="logo-wrapper">
+      <a href="index.html"><img src="assets/logo.svg" /></a>
+    </div>
+    <div class="nav-wrapper">
+      <div>
+        <div class="lang-icon language-select-btn" role="button" aria-pressed="false">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <path
+              d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z" />
+          </svg>
+        </div>
+      </div>
+      <div class="nav">
+        <nav>
+          <ul>
+            <li><a href="resources/index.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="practitioners/index.html">Practitioners</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="selected-language">
+      <p>English</p>
+      <div class="download-btn" role="button">
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 16L7 11L8.4 9.55L11 12.15V4H13V12.15L15.6 9.55L17 11L12 16ZM6 20C5.45 20 4.97917 19.8042 4.5875 19.4125C4.19583 19.0208 4 18.55 4 18V15H6V18H18V15H20V18C20 18.55 19.8042 19.0208 19.4125 19.4125C19.0208 19.8042 18.55 20 18 20H6Z" />
+        </svg>
+      </div>
+    </div>
+    <div class="languages-wrapper">
+      <ul class="languages-list">
+        <li><a href="">Arabic / عربي</a></li>
+        <li><a href="">Bengali</a></li>
+        <li><a href="">Chinese / 中国人</a></li>
+        <li><a href="">English</a></li>
+        <li><a href="">French / Français</a></li>
+        <li><a href="">Greek / Ελληνικά</a></li>
+        <li><a href="resources/italian.html">Italian / Italiano</a></li>
+        <li><a href="">Polish / Polski</a></li>
+        <li><a href="">Punjab / ਪੰਜਾਬ</a></li>
+        <li><a href="">Romanian / Română</a></li>
+        <li><a href="">Scottish Gaelic / Gàidhlig na h-Alba</a></li>
+        <li><a href="">Somali / Soomaali</a></li>
+        <li><a href="">Spanish / Español</a></li>
+        <li><a href="">Turkish / Türkçe</a></li>
+        <li><a href="">Ukranian / українська</a></li>
+        <li><a href="">Urdu / اردو</a></li>
+        <li><a href="">Welsh / Cymraeg</a></li>
+      </ul>
+    </div>
+    <!--Mobile version - hamburger and sidebar-->
+    <label class="hamburger-menu">
+      <input type="checkbox" id="menu-checkbox">
+    </label>
+
+    <aside class="sidebar">
+      <nav>
+        <ul class="nav__mobile">
+          <li>
+            <a href="resources/">
+              <div class="resources-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                  <path
+                    d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z" />
+                </svg>
+                Resources
+              </div>
+            </a>
+          </li>
+          <ul class="languages-list__mobile">
+            <li><a href="">Arabic / عربي</a></li>
+            <li><a href="">Bengali</a></li>
+            <li><a href="">Chinese / 中国人</a></li>
+            <li><a href="">English</a></li>
+            <li><a href="">French / Français</a></li>
+            <li><a href="">Greek / Ελληνικά</a></li>
+            <li><a href="">Italian / Italiano</a></li>
+            <li><a href="">Polish / Polski</a></li>
+            <li><a href="">Punjab / ਪੰਜਾਬ</a></li>
+            <li><a href="">Romanian / Română</a></li>
+            <li><a href="">Scottish Gaelic / Gàidhlig na h-Alba</a></li>
+            <li><a href="">Somali / Soomaali</a></li>
+            <li><a href="">Spanish / Español</a></li>
+            <li><a href="">Turkish / Türkçe</a></li>
+            <li><a href="">Ukranian / українська</a></li>
+            <li><a href="">Urdu / اردو</a></li>
+            <li><a href="">Welsh / Cymraeg</a></li>
+          </ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="practitioners/">Practioners</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </header>
   <main class="container document row">
 
     <aside class="document__toc">
       <nav>
         <ul>
-          <li><a href="#need-to-know">Need to know</a></li>
-          <li><a href="#does-bilingualism-have-negative-effects-for-autistic-people">Does bilingualism have negative
+          <li><a href="practitioners/info.html#need-to-know">Need to know</a></li>
+          <li><a href="practitioners/info.html#does-bilingualism-have-negative-effects-for-autistic-people">Does
+              bilingualism have negative
               effects
               for autistic people?</a></li>
-          <li><a href="#what-we-recommend">What to recommend</a></li>
-          <li><a href="#clinical-support-for-autistic-bilingual-people">Clinical support for autistic bilingual
+          <li><a href="practitioners/info.html#what-we-recommend">What to recommend</a></li>
+          <li><a href="practitioners/info.html#clinical-support-for-autistic-bilingual-people">Clinical support for
+              autistic bilingual
               people</a>
           </li>
-          <li><a href="#research-with-minimally-verbal-people">Research with minimally verbal people</a></li>
-          <li><a href="#references">References</a></li>
+          <li><a href="practitioners/info.html#research-with-minimally-verbal-people">Research with minimally verbal
+              people</a></li>
+          <li><a href="practitioners/info.html#references">References</a></li>
         </ul>
       </nav>
     </aside>
@@ -77,13 +179,14 @@
           100 people worldwide. There is debate regarding the language used when describing autism. Here we use
           identity-first language (e.g. “autistic person”) as opposed to person-first language (e.g. “person with
           autism”)
-          to respect the preference of the majority of autistic people<sup><a href="#ref-1">1</a>,<a
-              href="#ref-2">2</a></sup>.</p>
+          to respect the preference of the majority of autistic
+          people<sup><a href="practitioners/info.html#ref-1">1</a>,<a href="practitioners/info.html#ref-2">2</a></sup>.
+        </p>
         <p>
           <strong>Bilingualism</strong> is the knowledge of more than one language, signed or spoken, regardless of the
           level o proficiency and the age at which a language is acquired. It is estimated that at least half the
           world’s
-          population is bilingual<sup><a href="#ref-3">3</a></sup>.
+          population is bilingual<sup><a href="practitioners/info.html#ref-3">3</a></sup>.
         </p>
       </section>
       <section id="does-bilingualism-have-negative-effects-for-autistic-people">
@@ -94,60 +197,67 @@
           provide
           opportunities to positively influence cognitive, cultural, and social development. The research available
           contradicts the widespread concerns that being exposed to several languages at home or school could cause
-          additional delays for autistic children’s cognitive and language development<sup><a href="#ref-4">4</a></sup>,
+          additional delays for autistic children’s cognitive and
+          language development<sup><a href="practitioners/info.html#ref-4">4</a></sup>,
           and
           that a monolingual environment
-          would be better for autistic children<sup><a href="#ref-5">5</a></sup>.</p>
+          would be better for autistic children<sup><a href="practitioners/info.html#ref-5">5</a></sup>.</p>
 
         <p><strong>Autistic behaviours:</strong> The research currently available has found that <span
             class="text-highlight">bilingualism does not have a negative effect on any core diagnostic
-            behaviours</span><sup><a href="#ref-5">5</a></sup>.
+            behaviours</span><sup><a href="practitioners/info.html#ref-5">5</a></sup>.
         </p>
 
         <p><strong>Language:</strong> Autistic people can demonstrate a wide range of language abilities, ranging from
-          highly fluent language use to minimally verbal<sup><a href="#ref-6">6</a></sup>. It is well established in the
+          highly fluent language use to minimally verbal<sup><a href="practitioners/info.html#ref-6">6</a></sup>. It is
+          well established in the
           literature that <span class="text-highlight">bilingualism does not cause additional difficulties in language
             development</span> for
-          autistic children<sup><a href="#ref-7">7</a></sup>. While reports show that bilingual children can
+          autistic children<sup><a href="practitioners/info.html#ref-7">7</a></sup>. While reports show that bilingual
+          children can
           unintentionally
           mix languages or have smaller
           vocabularies early in childhood, this is also typical for most neurotypical bilingual children, and does
           not
-          often last<sup><a href="#ref-8">8</a></sup>.</p>
+          often last<sup><a href="practitioners/info.html#ref-8">8</a></sup>.</p>
 
         <p><strong>Cognitive skills:</strong> Research has consistently found that <span
             class="text-highlight">bilingualism
             does not delay the development of cognitive skills</span> in autistic children, including general
-          <span>executive skills</span><sup><a href="#ref-9">9</a></sup> such as inhibition<sup><a
-              href="#ref-10">10</a></sup> and
-          switching skills<sup><a href="#ref-11">11</a></sup>, and aspects of <span class="text-highlight">social
-            cognition</span><sup><a href="#ref-12">12</a></sup>. Evidence in both western and non-western
+          <span>executive skills</span><sup><a href="practitioners/info.html#ref-9">9</a></sup> such as
+          inhibition<sup><a href="practitioners/info.html#ref-10">10</a></sup> and
+          switching skills<sup><a href="practitioners/info.html#ref-11">11</a></sup>, and aspects of <span
+            class="text-highlight">social
+            cognition</span><sup><a href="practitioners/info.html#ref-12">12</a></sup>. Evidence in both western and
+          non-western
           populations suggests
           bilingualism could also advantage autistic children in one or more of these skills, possibly in
           a long-lasting
-          way<sup><a href="#ref-13">13</a></sup>.
+          way<sup><a href="practitioners/info.html#ref-13">13</a></sup>.
         </p>
 
         <p><strong>Social skills:</strong> Recent findings suggest that <span class="text-highlight">learning two
             languages
             from early childhood can support autistic people’s social and social-cognitive skills</span>, especially the
           ability to understand other people’s mind and point of view (perspective-taking)<sup><a
-              href="#ref-13">13</a></sup>.
+              href="practitioners/info.html#ref-13">13</a></sup>.
         </p>
 
         <p><strong>Daily life and autistic perspectives:</strong> New research asked autistic young people and adults
           how
           they feel about being bilingual. Adults told researchers that bilingualism helps autistic people <span
             class="text-highlight">connect with their identity and communities</span> (both autistic and non-autistic)
-          worldwide<sup><a href="#ref-13">13</a></sup>. <span class="text-highlight">Bilingualism can increase autistic
+          worldwide<sup><a href="practitioners/info.html#ref-13">13</a></sup>. <span class="text-highlight">Bilingualism
+            can increase autistic
             people’s
             self-esteem, help them to
             better understand themselves</span>, and access leisure, education, and
           professional
-          <span class="text-highlight">opportunities</span><sup><a href="#ref-14">14</a></sup>. Autistic children and
+          <span class="text-highlight">opportunities</span><sup><a href="practitioners/info.html#ref-14">14</a></sup>.
+          Autistic children and
           young
           people are also positive about
-          bilingualism<sup><a href="#ref-15">15</a></sup>. They see it as a tool for <span
+          bilingualism<sup><a href="practitioners/info.html#ref-15">15</a></sup>. They see it as a tool for <span
             class="text-highlight">authentic
             self-expression</span> and making
           new friends. Acknowledging dual cultural identities is important, and <span class="text-highlight">if
@@ -155,7 +265,7 @@
             aren’t able to join in with their family, they can feel isolated</span>. Some young people see
           bilingualism as
           a “special code”, <span class="text-highlight">increasing closeness with their parents</span><sup><a
-              href="#ref-15">15</a></sup>.
+              href="practitioners/info.html#ref-15">15</a></sup>.
         </p>
       </section>
       <section id="what-we-recommend">
@@ -179,11 +289,13 @@
         </a>
         <p>The role of practitioners is crucial in bilingual families’ decisions to maintain bilingualism in the home,
           and
-          to speak their home language with their autistic child<sup><a href="#ref-16">16</a></sup>. It is important for
+          to speak their home language with their autistic
+          child<sup><a href="practitioners/info.html#ref-16">16</a></sup>. It is important for
           clinicians supporting the child to
           prioritise the home languages, which will facilitate the child’s access to language and culture<sup><a
-              href="#ref-17">17</a></sup>. Practitioners
-          have identified several current barriers to optimal support<sup><a href="#ref-18">18</a></sup>:</p>
+              href="practitioners/info.html#ref-17">17</a></sup>. Practitioners
+          have identified several current barriers to optimal
+          support<sup><a href="practitioners/info.html#ref-18">18</a></sup>:</p>
         <ul>
           <li>
             <p>There can be uncertainties as to whether clinicians are providing the most adapted advice. There is a
@@ -362,60 +474,46 @@
       </section>
     </div>
   </main>
-  <script>
-    // toc navigation
-    const options = {
-      root: null,
-      rootMargin: "0px 0px -99% 0px",
-      threshold: 0.0
-    }
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        const id = entry.target.getAttribute('id');
-        if (entry.isIntersecting) {
-          document.querySelector(`.document__toc li a[href="#${id}"]`).parentElement.classList.add('active')
-        } else {
-          console.log(entry.isIntersecting)
-          document.querySelector(`.document__toc li a[href="#${id}"]`).parentElement.classList.remove('active')
-        }
-      })
-    }, options)
-    // track all sections that have an 'id' applied
-    document.querySelectorAll('section[id]').forEach((section) => {
-      observer.observe(section)
-    })
-
-
-    // reference highlighting
-    const highlightCol = getComputedStyle(document.documentElement).getPropertyValue('--color-highlight');
-    let ref;
-
-    document.querySelector('main').addEventListener('click', (e) => {
-      if (e.target.parentNode.localName == 'sup') {
-        let ref = document.getElementById(`ref-${e.target.textContent}`);
-
-        // set backgroung to highlight colour
-        ref.firstElementChild.style.background = highlightCol;
-        ref.firstElementChild.style.transition = 'background 400ms'
-
-        // after 2 seconds become 100% transparent (last two digits define this behaviour)
-        setTimeout(() => {
-          ref.firstElementChild.style.background = '#FFFFFF00';
-        }, '2000')
-      }
-    })
-    // collapsible containers
-    let containers = document.querySelectorAll('.collapsible-container');
-
-    containers.forEach(container => {
-      const opener = container.querySelector('h3');
-      console.log(opener)
-      opener.addEventListener('click', () => {
-        [...containers].filter(c => c !== container).forEach(c => c.classList.remove('opened'));
-        container.classList.toggle('opened');
-      })
-    })
-  </script>
+  <div class="footer-wrapper">
+    <footer>
+      <div>
+        <div class="logos">
+          <div class="logo" id="logo-1"><img src="./assets/logos/autism_europe__logo.png" alt=""></div>
+          <div class="logo" id="logo-2"><img src="./assets/logos/qmu__logo.png" alt=""></div>
+          <div class="logo" id="logo-3"><img src="./assets/logos/edi_uni__logo.png" alt=""></div>
+          <div class="logo" id="logo-4"><img src="./assets/logos/firah__logo.png" alt=""></div>
+          <div class="logo" id="logo-5"><img src="./assets/logos/bilingualism_matters__logo.png" alt=""></div>
+        </div>
+        <p class="footer--copyright">© Autism and Bilingualism</p>
+      </div>
+      <nav class="nav-footer">
+        <ul>
+          <li><a href="resources/">Resources</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="practitioners/">Practitioners</a></li>
+        </ul>
+      </nav>
+      <div>
+        <button class="back-to-top" aria-label="Back to top">
+          <img src="assets/icons/back_to_top.svg" alt="back to top icon">
+        </button>
+        <div class="socials-wrapper">
+          <div class="social">
+            <a href="https://www.facebook.com" target="_blank"><img src="./assets/logos/facebook__logo.png"
+                alt="facebook logo"></a>
+          </div>
+          <div class="social">
+            <a href="https://www.x.com" target="_blank"><img src="assets/logos/x__logo.png" alt="x
+							logo"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/doc_nav.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/footer.js"></script>
 </body>
 
 </html>
