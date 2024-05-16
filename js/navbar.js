@@ -26,13 +26,13 @@ function scrollHide() {
 //
 const body = document.querySelector('body');
 
-body.style.marginTop = `calc(${header.offsetHeight}px + 2.5rem)`;
+body.style.marginTop = `calc(${header.offsetHeight}px)`;
 
 const resizeObserver = new ResizeObserver(() => {
 	newHeight = header.offsetHeight;
 
 	if (newHeight !== lastHeight) {
-		body.style.marginTop = `calc(${header.offsetHeight}px + 2.5rem)`;
+		body.style.marginTop = `calc(${header.offsetHeight}px)`;
 		lastHeight = header.offsetHeight;
 		menuCheckbox.checked = false;
 	}
@@ -71,11 +71,11 @@ menuCheckbox.addEventListener('change', (e) => {
 const navWrap = document.querySelector('.nav-wrapper');
 const selLang = document.querySelector('.selected-language');
 
-const url = window.location.pathname;
+const pathname = window.location.pathname;
 const regex = new RegExp('^/resources');
-console.log(regex.test(url));
+console.log(regex.test(pathname));
 
-if (!regex.test(url)) {
+if (!regex.test(pathname)) {
 	navWrap.style.justifyContent = 'flex-end';
 	langSelectBtn.remove();
 	selLang.remove();
