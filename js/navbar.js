@@ -72,7 +72,7 @@ const navWrap = document.querySelector('.nav-wrapper');
 const selLang = document.querySelector('.selected-language');
 
 const pathname = window.location.pathname;
-const regex = new RegExp('^/resources');
+const regex = new RegExp('^/families');
 console.log(regex.test(pathname));
 
 if (!regex.test(pathname)) {
