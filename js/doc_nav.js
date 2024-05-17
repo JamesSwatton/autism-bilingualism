@@ -8,10 +8,10 @@ const observer = new IntersectionObserver(entries => {
 	entries.forEach(entry => {
 		const id = entry.target.getAttribute('id');
 		if (entry.isIntersecting) {
-			document.querySelector(`.document__toc li a[href="#${id}"]`).parentElement.classList.add('active')
+			document.querySelector(`.document__toc li a[href="practitioners/info.html#${id}"]`).parentElement.classList.add('active')
 		} else {
 			console.log(entry.isIntersecting)
-			document.querySelector(`.document__toc li a[href="#${id}"]`).parentElement.classList.remove('active')
+			document.querySelector(`.document__toc li a[href="practitioners/info.html#${id}"]`).parentElement.classList.remove('active')
 		}
 	})
 }, options)

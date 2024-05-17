@@ -1608,7 +1608,9 @@ body {
   font-family: var(--font-secondary--light);
   font-size: var(--font-size);
   line-height: 1.5;
-  overflow-x: hidden;
+
+  /* overflow-x STOPS POSITION STICKY ELEMENTS FROM WORKING!!
+  /* overflow-x: hidden; */
 }
 
 main {
