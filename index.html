@@ -14,16 +14,14 @@
 <body>
 	<header class="nav-container">
 		<div class="logo-wrapper">
-			<a href="index.html"><img src="assets/logo-large-01.svg" /></a>
+			<a href="index.html" aria-label="home"><img src="assets/logo-large-01.svg" alt="Autism and Bilingualism logo" />
 		</div>
 		<div class="nav-wrapper">
-			<div>
-				<div class="lang-icon language-select-btn" role="button" aria-pressed="false">
-					<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-						<path
-							d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z" />
-					</svg>
-				</div>
+			<div class="lang-icon language-select-btn" aria-label="language select" role="button" aria-pressed="false">
+				<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+					<path
+						d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z" />
+				</svg>
 			</div>
 			<div class="nav">
 				<nav>
@@ -38,7 +36,8 @@
 		</div>
 		<div class="selected-language">
 			<p>English</p>
-			<div class="download-btn" role="button">
+			<div class="download-btn" role="button" aria-label="download printable
+				version">
 				<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 					<path
 						d="M12 16L7 11L8.4 9.55L11 12.15V4H13V12.15L15.6 9.55L17 11L12 16ZM6 20C5.45 20 4.97917 19.8042 4.5875 19.4125C4.19583 19.0208 4 18.55 4 18V15H6V18H18V15H20V18C20 18.55 19.8042 19.0208 19.4125 19.4125C19.0208 19.8042 18.55 20 18 20H6Z" />
@@ -67,7 +66,7 @@
 			</ul>
 		</div>
 		<!--Mobile version - hamburger and sidebar-->
-		<label class="hamburger-menu">
+		<label class="hamburger-menu" aria-label="menu" role="button">
 			<input type="checkbox" id="menu-checkbox">
 		</label>
 
@@ -118,17 +117,18 @@
 			<div class="container home">
 				<h1 class="home__heading text-primary">Should Your Autistic Child Learn
 					More Than One Languge?</h1>
-				<img src="assets/autism-bilingualism--main-guy-04.png" class="home__img">
+				<img src="assets/autism-bilingualism--main-guy-04.png" class="home__img"
+					alt="a round cute looking character is looking thoughtful">
 				<p class="home__text">It is natural to prefer to speak your own language with your children. If you
 					worry that speaking your own
 					language with your autistic child will be a problem, then this site is for you.</p>
-				<a class="home__btn" href="families/"><button class="btn--primary">Learn More</button></a>
+				<a class="home__btn btn--primary" href="families/">Learn more</a>
 			</div>
 		</section>
 		<section class="background-primary">
 			<div class="container home__welcome">
-				<div class="width-50 flex align-cnt">
-					<img src="assets/hi-ciao-hola.svg" alt="hello in multiple languages" style="max-width: 450px">
+				<div class="welcome__heading">
+					<img src="assets/hi-ciao-hola.svg" alt="hello in multiple languages">
 				</div>
 				<div class="width-50 text-white">
 					<p>We are researchers at Queen Margaret University & The University of Edinburgh who work on
@@ -158,11 +158,15 @@
 			<footer>
 				<div>
 					<div class="logos">
-						<div class="logo" id="logo-1"><img src="assets/logos/autism_europe__logo.png" alt=""></div>
-						<div class="logo" id="logo-2"><img src="assets/logos/qmu__logo.png" alt=""></div>
-						<div class="logo" id="logo-3"><img src="assets/logos/edi_uni__logo.png" alt=""></div>
-						<div class="logo" id="logo-4"><img src="assets/logos/firah__logo.png" alt=""></div>
-						<div class="logo" id="logo-5"><img src="assets/logos/bilingualism_matters__logo.png" alt=""></div>
+						<div class="logo" id="logo-1"><img src="assets/logos/autism_europe__logo.png" alt="Autism Europe logo">
+						</div>
+						<div class="logo" id="logo-2"><img src="assets/logos/qmu__logo.png" alt="Queen Margaret University logo">
+						</div>
+						<div class="logo" id="logo-3"><img src="assets/logos/edi_uni__logo.png" alt="Edinburgh University
+							logo"></div>
+						<div class="logo" id="logo-4"><img src="assets/logos/firah__logo.png" alt="Firah logo"></div>
+						<div class="logo" id="logo-5"><img src="assets/logos/bilingualism_matters__logo.png"
+								alt="Bilingualism Matters logo"></div>
 					</div>
 					<p class="footer--copyright">© Autism and Bilingualism</p>
 				</div>
@@ -176,7 +180,7 @@
 				</nav>
 				<div>
 					<button class="back-to-top" aria-label="Back to top">
-						<img src="assets/icons/back_to_top.svg" alt="back to top icon">
+						<img src="assets/icons/back_to_top.svg" alt="back to top">
 					</button>
 					<div class="socials-wrapper">
 						<div class="social">

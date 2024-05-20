@@ -39,14 +39,3 @@ document.querySelector('main').addEventListener('click', (e) => {
 		}, '2000')
 	}
 })
-// collapsible containers
-let containers = document.querySelectorAll('.collapsible-container');
-
-containers.forEach(container => {
-	const opener = container.querySelector('h3');
-	console.log(opener)
-	opener.addEventListener('click', () => {
-		[...containers].filter(c => c !== container).forEach(c => c.classList.remove('opened'));
-		container.classList.toggle('opened');
-	})
-})

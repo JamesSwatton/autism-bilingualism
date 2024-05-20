@@ -381,6 +381,7 @@
     margin: 0;
     gap: 1rem;
     font-size: 1.5rem;
+    margin-bottom: 6rem;
 
     & a {
       text-decoration: none;
@@ -390,6 +391,7 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
+      width: max-content;
 
       & svg {
         fill: var(--color-primary);
@@ -654,6 +656,7 @@ footer>div:last-child {
   position: sticky;
   top: 2rem;
   align-self: start;
+  transition: top 450ms ease;
 
   & a {
     display: block;
@@ -1057,14 +1060,23 @@ footer>div:last-child {
   grid-row: 4 / 5;
   margin-left: 2rem;
   margin-bottom: 4rem;
+  max-width: max-content;
 }
 
 .home__welcome {
   display: flex;
+  justify-content: space-between;
   gap: 3rem;
   padding-top: var(--margin-lg);
   padding-bottom: var(--margin-lg);
 
+}
+
+.welcome__heading {
+  display: flex;
+  align-self: center;
+  width: 50%;
+  max-width: 450px;
 }
 
 .home__questions {
@@ -1520,6 +1532,7 @@ button {
 
   &:hover {
     box-shadow: none;
+    color: var(--color-white);
   }
 }
 
@@ -1614,7 +1627,7 @@ body {
 }
 
 main {
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 .h1,
