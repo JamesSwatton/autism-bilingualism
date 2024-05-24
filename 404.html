@@ -4,7 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>404 - Page not found!</title>
-	<link rel="stylesheet" href="./styles/style.css">
+	<base href="http://127.0.0.1:8080/">
+	<!-- <base href="https://jamesswatton.github.io/autism-bilingualism/"> -->
+	<link rel="stylesheet" href="styles/style.css">
 	<style>
 		img {
 			width: clamp(80px, 70vw, 400px);
@@ -23,8 +25,8 @@
 <body>
 	<div class="container flex">
 		<h1>Oops! Page not found.</h1>
-		<a href="index.html">Back to site</a>
-		<img src="./assets/questions_2.png" alt="character looking around, confused">
+		<a class="invert-hover" href="index.html">Back to site</a>
+		<img src="assets/questions_2.png" alt="character looking around, confused">
 	</div>
 </body>
 
