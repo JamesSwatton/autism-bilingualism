@@ -1,5 +1,17 @@
+// add favicon to pages
+const head = document.querySelector('head');
+const fav = document.createElement('link');
+fav.setAttribute('rel', 'icon');
+fav.setAttribute('type', 'image/x-icon');
+fav.setAttribute('href', 'assets/favicon.svg');
+
+head.append(fav);
+
+
 const body = document.querySelector('body');
 const header = document.createElement('header');
+
+
 header.className = 'nav-container';
 header.innerHTML = `
 		<div class="logo-wrapper">
