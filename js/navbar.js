@@ -85,7 +85,7 @@ if (!regex.test(pathname)) {
 	langWrapper.remove();
 }
 
-// collapsible containers
+// collapsible containers in document authors
 let containers = document.querySelectorAll('.collapsible-container');
 
 containers.forEach(container => {
