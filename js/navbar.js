@@ -183,7 +183,6 @@ const selLang = document.querySelector('.selected-language');
 
 const pathname = window.location.pathname;
 const regex = new RegExp('families');
-console.log(regex.test(pathname));
 
 if (!regex.test(pathname)) {
 	navWrap.style.justifyContent = 'flex-end';
@@ -206,7 +205,6 @@ function formatFilePath(filePath) {
 const selectedLanguage = formatFilePath(pathname);
 
 
-console.log(selectedLanguage);
 if (regex.test(pathname)) {
 	if (!selectedLanguage || selectedLanguage == 'Index') {
 		langContainer.innerHTML = "English";
@@ -220,7 +218,6 @@ let containers = document.querySelectorAll('.collapsible-container');
 
 containers.forEach(container => {
 	const opener = container.querySelector('[role="button"]');
-	console.log(opener)
 	opener.addEventListener('click', () => {
 		[...containers].filter(c => c !== container).forEach(c => c.classList.remove('opened'));
 		container.classList.toggle('opened');
