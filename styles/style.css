@@ -178,6 +178,7 @@
 }
 
 .lang-icon {
+  margin-top: 2px;
   width: 24px;
   height: 24px;
   cursor: pointer;
@@ -246,7 +247,7 @@
   display: flex;
   /* display: none; */
   gap: 0.5rem;
-  padding: 0.5rem 0 0.5rem 1rem;
+  padding: 0.3rem 0 0.3rem 1rem;
   background: var(--color-gray-light);
 
   & p {
