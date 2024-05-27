@@ -44,7 +44,8 @@
   /* Sizes */
   --font-size: 100%;
   --font-larger: 1.2rem;
-  --spacing: 1.5625em;
+  /* --spacing: 1.5625em; */
+  --spacing: 1.7em;
   --container-width: 88%;
   --container-max-width: 75em;
   --text-width: clamp(45ch, 100%, 75ch);
