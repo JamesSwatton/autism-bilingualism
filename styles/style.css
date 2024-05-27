@@ -579,6 +579,31 @@ footer>div:last-child {
  * General
  **/
 
+.cookie-consent-banner {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 30px 2rem;
+  font-size: 1rem;
+  text-align: center;
+  z-index: 1000;
+
+  & p {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 1rem !important;
+    line-height: 1.3em !important;
+  }
+
+  & button:first-of-type {
+    margin-right: 1rem;
+  }
+}
+
 .mirror {
   transform: scaleX(-1);
 }
@@ -1549,6 +1574,11 @@ button {
   box-shadow: var(--btn-shadow);
   transition: box-shadow 250ms ease-in-out;
   text-align: center;
+
+  &.gray {
+    color: var(--color-black);
+    background-color: var(--color-gray-medium);
+  }
 
   &:hover {
     box-shadow: none;
