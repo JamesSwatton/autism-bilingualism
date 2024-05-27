@@ -215,7 +215,7 @@
   list-style-type: none;
   margin: 2rem 0 0.5rem 1rem;
 
-  li {
+  & li {
     margin: 0 3rem 0.3rem 0;
     font-family: var(--font-primary);
 
@@ -224,8 +224,8 @@
       padding: 2px 4px;
 
       &:hover {
-        color: var(--color-white);
-        background-color: var(--color-primary);
+        color: var(--color-white) !important;
+        background-color: var(--color-primary) !important;
       }
     }
   }
