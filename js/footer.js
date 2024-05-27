@@ -30,8 +30,8 @@ footerWrapper.innerHTML = `
 					</button>
 					<div class="socials-wrapper">
 						<div class="social">
-							<a href="https://www.facebook.com" target="_blank"><img src="assets/logos/facebook__logo.png"
-									alt="facebook logo"></a>
+							<!-- <a href="https://www.facebook.com" target="_blank"><img src="assets/logos/facebook__logo.png" -->
+							<!-- 		alt="facebook logo"></a> -->
 						</div>
 						<div class="social">
 							<a href="https://www.x.com/rachaelvdavis" target="_blank"><img src="assets/logos/x__logo.png" alt="x
